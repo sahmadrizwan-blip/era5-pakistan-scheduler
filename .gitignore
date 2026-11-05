@@ -1,0 +1,17 @@
+# Secrets (NEVER commit)
+secrets.local.json
+.cdsapirc
+.env
+
+# Virtualenv & Python bytecode
+.venv/
+venv/
+bin/
+__pycache__/
+*.py[cod]
+
+# Runtime locks, logs, and local downloads
+.scheduler.lock
+logs/
+downloads/
+scratch_*.py
