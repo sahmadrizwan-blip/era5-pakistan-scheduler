@@ -1,6 +1,6 @@
 {
 "pl:2026-01:g00":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "req":{
@@ -126,11 +126,17 @@
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
 "sub":"2026-11-05T08:24:41Z",
 "rid":"5874c6ef-ec30-4231-9572-aa2beaa698eb",
-"chk":"2026-11-05T10:31:15Z"
+"chk":"2026-11-05T18:28:55Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-05/f85b501c3c4824a5ba71ed28776f66f5.grib",
+"size":437002560,
+"md5":"d8b56b405f2458c16be7ebf605792410",
+"fin":"2026-11-05T18:28:56Z",
+"terr":"2026-11-05T18:34:48Z MD5 mismatch (d77add5e127071bbd755933499527ded != d8b56b405f2458c16be7ebf605792410); deleted, will retry",
+"tatt":1
 },
 "pl:2026-01:g01":{
-"s":"pending",
-"att":0,
+"s":"submitted",
+"att":1,
 "cov_checked":true,
 "req":{
 "product_type":[
@@ -253,7 +259,8 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-05T07:14:05Z"
+"sub":"2026-11-05T18:34:58Z",
+"rid":"830661fb-6e19-42fc-8491-496bd4240011"
 },
 "pl:2026-01:g02":{
 "s":"pending",
