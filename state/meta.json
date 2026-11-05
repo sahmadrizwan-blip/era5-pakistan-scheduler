@@ -105,8 +105,10 @@
    },
    "created": "2026-11-04T07:13:27.694197",
    "ds": "reanalysis-era5-pressure-levels",
+   "fid": "11dNSvp-ZwuGPPl-Dmb82pPBy6xy4pa8j",
    "fin": "2026-11-04T11:35:14.857090",
    "md5": "7727c2a8bc841c0a037f3aa93acf105e",
+   "pulled": true,
    "req": {
     "area": [
      40.0,
