@@ -2,37 +2,33 @@
 """
 One-command cloud deployment for ERA5 Pakistan Scheduler -> GitHub Actions.
 
-1. Downloads standalone `gh.exe` (GitHub CLI) into `./bin/gh.exe` if not present.
-2. Starts GitHub OAuth Device Flow (prints your 8-character code and opens
-   https://github.com/login/device in your browser -- no manual token creation needed).
-3. Creates (or updates) your GitHub repository (`era5-pakistan-scheduler`).
-4. Uploads all repository files (`era5_scheduler.py`, `config.json`,
-   `.github/workflows/era5-scheduler.yml`, `state/`, etc.) via the GitHub Contents API
-   (never uploading `secrets.local.json`).
-5. Encrypts & sets your GitHub Actions Secrets (`CDSAPI_KEY`, `CDSAPI_URL`,
-   `GDRIVE_CLIENT_ID`, `GDRIVE_CLIENT_SECRET`, `GDRIVE_REFRESH_TOKEN`) via `gh secret set`.
-6. Enables & triggers the `ERA5 Pakistan Scheduler` GitHub Actions workflow in the cloud.
+Uses the GitHub REST API + libsodium (`crypto_box_seal`) directly from Python:
+  1. Uses `GITHUB_TOKEN` from `secrets.local.json` (or runs GitHub OAuth Device Flow).
+  2. Creates (or updates) your GitHub repository (`era5-pakistan-scheduler`).
+  3. Uploads all repository files (`era5_scheduler.py`, `config.json`,
+     `.github/workflows/era5-scheduler.yml`, `state/`, etc.) via the GitHub Contents API
+     (never uploading `secrets.local.json`).
+  4. Encrypts & sets your GitHub Actions Secrets (`CDSAPI_KEY`, `CDSAPI_URL`,
+     `GDRIVE_CLIENT_ID`, `GDRIVE_CLIENT_SECRET`, `GDRIVE_REFRESH_TOKEN`) via the
+     GitHub Actions Secrets REST API.
+  5. Triggers the `ERA5 Pakistan Scheduler` GitHub Actions workflow in the cloud.
 """
 from __future__ import annotations
 
 import argparse
 import base64
-import io
+import ctypes
+import ctypes.util
 import json
 import os
-import subprocess
 import time
 import webbrowser
-import zipfile
 from pathlib import Path
 
 import requests
 
 ROOT = Path(__file__).resolve().parent
-BIN_DIR = ROOT / "bin"
 SECRETS_FILE = ROOT / "secrets.local.json"
-
-# Official GitHub CLI OAuth Client ID for Device Flow
 GH_OAUTH_CLIENT_ID = "178c6fc778ccc68e1d6a"
 
 UPLOAD_PATHS = [
@@ -49,26 +45,35 @@ UPLOAD_PATHS = [
 ]
 
 
-def ensure_gh() -> Path:
-    gh_exe = BIN_DIR / "gh.exe"
-    if gh_exe.exists():
-        return gh_exe
-    print("Downloading standalone GitHub CLI (gh.exe)...", flush=True)
-    BIN_DIR.mkdir(parents=True, exist_ok=True)
-    rel = requests.get("https://api.github.com/repos/cli/cli/releases/latest", timeout=60).json()
-    asset_url = next(
-        a["browser_download_url"]
-        for a in rel.get("assets", [])
-        if a["name"].endswith("_windows_amd64.zip")
-    )
-    zbytes = requests.get(asset_url, timeout=120).content
-    with zipfile.ZipFile(io.BytesIO(zbytes)) as zf:
-        for member in zf.namelist():
-            if member.endswith("bin/gh.exe"):
-                gh_exe.write_bytes(zf.read(member))
-                break
-    print(f"Downloaded {gh_exe}", flush=True)
-    return gh_exe
+def load_libsodium() -> ctypes.CDLL:
+    candidates = [
+        r"C:\msys64\mingw64\bin\libsodium-26.dll",
+        r"C:\msys64\mingw64\bin\libsodium.dll",
+        ctypes.util.find_library("sodium") or "",
+        ctypes.util.find_library("libsodium") or "",
+    ]
+    for c in candidates:
+        if c and Path(c).exists() if os.path.isabs(c) else bool(c):
+            try:
+                lib = ctypes.CDLL(c)
+                lib.sodium_init()
+                return lib
+            except OSError:
+                continue
+    raise RuntimeError("libsodium DLL not found; install mingw-w64-x86_64-libsodium")
+
+
+def encrypt_github_secret(public_key_b64: str, secret_value: str) -> str:
+    """Encrypt secret_value using libsodium crypto_box_seal for GitHub Actions Secrets API."""
+    lib = load_libsodium()
+    pk = base64.b64decode(public_key_b64)
+    msg = secret_value.encode("utf-8")
+    seal_bytes = int(lib.crypto_box_sealbytes())
+    ct = ctypes.create_string_buffer(len(msg) + seal_bytes)
+    rc = lib.crypto_box_seal(ct, msg, ctypes.c_ulonglong(len(msg)), pk)
+    if rc != 0:
+        raise RuntimeError(f"crypto_box_seal failed with code {rc}")
+    return base64.b64encode(ct.raw).decode("ascii")
 
 
 def github_device_login() -> str:
@@ -142,19 +147,6 @@ def github_device_login() -> str:
         raise SystemExit(f"GitHub device login failed: {tr}")
 
 
-def gh_set_secret(gh: Path, tok: str, repo_full: str, name: str, val: str) -> None:
-    env = dict(os.environ, GH_TOKEN=tok)
-    subprocess.run(
-        [str(gh), "secret", "set", name, "-R", repo_full],
-        cwd=str(ROOT),
-        input=val,
-        text=True,
-        env=env,
-        capture_output=True,
-        check=True,
-    )
-
-
 def put_file(session: requests.Session, repo_full: str, rel_path: str, content: bytes) -> None:
     url = f"https://api.github.com/repos/{repo_full}/contents/{rel_path}"
     r = session.get(url, timeout=60)
@@ -171,15 +163,28 @@ def put_file(session: requests.Session, repo_full: str, rel_path: str, content: 
     print(f"  uploaded {rel_path}", flush=True)
 
 
-def sync_secrets_to_github(gh: Path, tok: str, repo_full: str) -> set[str]:
+def sync_secrets_to_github(session: requests.Session, repo_full: str) -> set[str]:
     uploaded: set[str] = set()
     if not SECRETS_FILE.exists():
         return uploaded
+    pk_resp = session.get(f"https://api.github.com/repos/{repo_full}/actions/secrets/public-key", timeout=60)
+    pk_resp.raise_for_status()
+    pk_info = pk_resp.json()
+    key_id = pk_info["key_id"]
+    pub_key = pk_info["key"]
+
     secrets = json.loads(SECRETS_FILE.read_text(encoding="utf-8"))
     for k in ("CDSAPI_KEY", "CDSAPI_URL", "GDRIVE_CLIENT_ID", "GDRIVE_CLIENT_SECRET", "GDRIVE_REFRESH_TOKEN"):
         v = secrets.get(k)
         if v:
-            gh_set_secret(gh, tok, repo_full, k, str(v))
+            enc_val = encrypt_github_secret(pub_key, str(v))
+            sr = session.put(
+                f"https://api.github.com/repos/{repo_full}/actions/secrets/{k}",
+                json={"encrypted_value": enc_val, "key_id": key_id},
+                timeout=60,
+            )
+            if sr.status_code not in (201, 204):
+                raise RuntimeError(f"Failed to set secret {k}: {sr.status_code} {sr.text[:300]}")
             print(f"  set GitHub Actions secret: {k}", flush=True)
             uploaded.add(k)
     return uploaded
@@ -192,8 +197,6 @@ def main() -> None:
     args = ap.parse_args()
 
     tok = github_device_login()
-    gh = ensure_gh()
-
     s = requests.Session()
     s.headers.update({"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"})
     user = s.get("https://api.github.com/user", timeout=60).json()["login"]
@@ -216,6 +219,7 @@ def main() -> None:
         )
         cr.raise_for_status()
         time.sleep(2)
+    default_branch = s.get(f"https://api.github.com/repos/{repo_full}", timeout=60).json().get("default_branch", "main")
     s.put(
         f"https://api.github.com/repos/{repo_full}/actions/permissions/workflow",
         json={"default_workflow_permissions": "write", "can_approve_pull_request_reviews": False},
@@ -235,19 +239,14 @@ def main() -> None:
         if fp.exists():
             put_file(s, repo_full, rel_path, fp.read_bytes())
 
-    uploaded = sync_secrets_to_github(gh, tok, repo_full)
-    if "GDRIVE_REFRESH_TOKEN" not in uploaded:
-        print("Waiting up to 10 minutes for Google Drive OAuth to complete so GDRIVE_* secrets can also be pushed to GitHub Actions...", flush=True)
-        for _ in range(120):
-            time.sleep(5)
-            secrets = json.loads(SECRETS_FILE.read_text(encoding="utf-8")) if SECRETS_FILE.exists() else {}
-            if secrets.get("GDRIVE_REFRESH_TOKEN"):
-                sync_secrets_to_github(gh, tok, repo_full)
-                break
+    sync_secrets_to_github(s, repo_full)
 
     print("Triggering cloud run on GitHub Actions...", flush=True)
-    env = dict(os.environ, GH_TOKEN=tok)
-    subprocess.run([str(gh), "workflow", "run", "era5-scheduler.yml", "-R", repo_full], cwd=str(ROOT), env=env, check=False)
+    s.post(
+        f"https://api.github.com/repos/{repo_full}/actions/workflows/era5-scheduler.yml/dispatches",
+        json={"ref": default_branch},
+        timeout=60,
+    )
     print(f"\nCloud scheduler deployed! View live runs at:\n  https://github.com/{repo_full}/actions", flush=True)
 
 
