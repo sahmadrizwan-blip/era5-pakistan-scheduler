@@ -1,0 +1,62 @@
+{
+  "_comment": "ERA5 Pakistan bulk downloader configuration. Secrets (CDS key, Google Drive OAuth) are NOT stored here: use env vars / GitHub secrets / secrets.local.json.",
+
+  "cds_url": "https://cds.climate.copernicus.eu/api",
+
+  "_area_comment": "North, West, South, East in degrees. Pakistan spans ~23.6-37.1N, 60.9-77.8E; this box adds a ~0.5 deg margin.",
+  "area_nwse": [37.5, 60.5, 23.5, 78.0],
+  "grid": "0.25/0.25",
+
+  "_period_comment": "start/end are YYYY-MM (inclusive). end='auto' = last complete month that ended at least auto_end_lag_days ago.",
+  "start": "1940-01",
+  "end": "auto",
+  "auto_end_lag_days": 5,
+  "order": "newest_year_first",
+
+  "_storage_comment": "auto = Google Drive if GDRIVE_* credentials exist, otherwise 'none' (submit-only: you pull results manually from https://cds.climate.copernicus.eu/requests). Other values: drive | local | none",
+  "storage": "auto",
+  "drive_root_folder": "ERA5_Pakistan",
+  "drive_free_space_margin_gb": 2,
+  "local_dir": "downloads",
+
+  "_pacing_comment": "CDS needs ~0.5-2 h per request: a request is not even polled until min_age_before_poll_minutes have passed, then at most every poll_interval_minutes.",
+  "min_age_before_poll_minutes": 90,
+  "poll_interval_minutes": 25,
+  "max_submissions_per_run": 2,
+  "max_run_minutes": 25,
+  "max_attempts": 4,
+  "retry_backoff_minutes": 120,
+  "max_unpulled_ready": 150,
+  "licence_check_hours": 24,
+
+  "datasets": {
+    "pressure_levels": {
+      "enabled": true,
+      "collection": "reanalysis-era5-pressure-levels",
+      "max_in_flight": 1,
+      "cost_safety": 0.97,
+      "pressure_levels": ["1", "2", "3", "5", "7", "10", "20", "30", "50", "70", "100", "125", "150", "175", "200", "225", "250", "300", "350", "400", "450", "500", "550", "600", "650", "700", "750", "775", "800", "825", "850", "875", "900", "925", "950", "975", "1000"],
+      "_groups_comment": "One request = one month x one group. CDS limit is 60000 fields/request; 2 vars x 37 levels x 24 h x 31 d = 55056.",
+      "variable_groups": [
+        {"tag": "z-t",       "variables": ["geopotential", "temperature"]},
+        {"tag": "u-v",       "variables": ["u_component_of_wind", "v_component_of_wind"]},
+        {"tag": "w-vo",      "variables": ["vertical_velocity", "vorticity"]},
+        {"tag": "d-pv",      "variables": ["divergence", "potential_vorticity"]},
+        {"tag": "r-q",       "variables": ["relative_humidity", "specific_humidity"]},
+        {"tag": "cc-o3",     "variables": ["fraction_of_cloud_cover", "ozone_mass_mixing_ratio"]},
+        {"tag": "clwc-ciwc", "variables": ["specific_cloud_liquid_water_content", "specific_cloud_ice_water_content"]},
+        {"tag": "crwc-cswc", "variables": ["specific_rain_water_content", "specific_snow_water_content"]}
+      ]
+    },
+    "model_levels": {
+      "enabled": true,
+      "collection": "reanalysis-era5-complete",
+      "max_in_flight": 1,
+      "cost_safety": 0.97,
+      "_comment": "MARS (tape) ERA5 model-level analysis, all 137 levels, hourly. One request = one day (CDS cost 105216 of 120000 limit). 75 crwc,76 cswc,77 etadot,129 z,130 t,131 u,132 v,133 q,135 w,138 vo,152 lnsp,155 d,203 o3,246 clwc,247 ciwc,248 cc",
+      "levelist": "1/to/137",
+      "param": "75/76/77/129/130/131/132/133/135/138/152/155/203/246/247/248",
+      "time": "00/to/23/by/1"
+    }
+  }
+}
