@@ -1,0 +1,84 @@
+name: ERA5 Pakistan Scheduler
+
+on:
+  schedule:
+    # Runs every 30 minutes. Requests are only polled after 90 minutes (1.5 hours)
+    # have elapsed since submission, matching CDS processing times (0.5 - 2 hours).
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (estimate costs & plan only, do not submit or transfer)'
+        required: false
+        default: 'false'
+        type: boolean
+      max_run_minutes:
+        description: 'Maximum minutes for this tick'
+        required: false
+        default: '25'
+        type: string
+
+concurrency:
+  group: era5-pakistan-scheduler
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run ERA5 scheduler tick
+        env:
+          CDSAPI_URL: ${{ secrets.CDSAPI_URL || 'https://cds.climate.copernicus.eu/api' }}
+          CDSAPI_KEY: ${{ secrets.CDSAPI_KEY }}
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+        run: |
+          ARGS="run --max-run-minutes ${{ inputs.max_run_minutes || '25' }}"
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          python era5_scheduler.py $ARGS
+
+      - name: Commit and push updated state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(state): update ERA5 Pakistan scheduler state [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo "No state changes to commit."
+          fi
+
+      - name: Upload ready manual download list & logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: era5-scheduler-status
+          path: |
+            state/progress.md
+            state/ready_for_manual_download.csv
+            logs/scheduler.log
+          if-no-files-found: ignore
+          retention-days: 14
