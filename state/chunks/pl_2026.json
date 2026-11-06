@@ -131,8 +131,8 @@
 "size":437002560,
 "md5":"d8b56b405f2458c16be7ebf605792410",
 "fin":"2026-11-05T18:28:56Z",
-"terr":"2026-11-06T00:07:21Z Drive chunk upload failed repeatedly",
-"tatt":2
+"terr":"2026-11-06T04:57:21Z Drive chunk upload failed repeatedly",
+"tatt":3
 },
 "pl:2026-01:g01":{
 "s":"ready",
@@ -266,12 +266,12 @@
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
 "fin":"2026-11-05T23:48:40Z",
-"terr":"2026-11-06T00:16:09Z Drive chunk upload failed repeatedly",
-"tatt":1
+"terr":"2026-11-06T05:09:21Z Drive chunk upload failed repeatedly",
+"tatt":2
 },
 "pl:2026-01:g02":{
-"s":"pending",
-"att":0,
+"s":"submitted",
+"att":1,
 "cov_checked":true,
 "req":{
 "product_type":[
@@ -394,7 +394,8 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-05T07:14:07Z"
+"sub":"2026-11-06T05:09:32Z",
+"rid":"958ff741-4f73-451b-912a-af97c74f9922"
 },
 "pl:2026-01:g03":{
 "s":"split",
