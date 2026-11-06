@@ -131,8 +131,8 @@
 "size":437002560,
 "md5":"d8b56b405f2458c16be7ebf605792410",
 "fin":"2026-11-05T18:28:56Z",
-"terr":"2026-11-06T04:57:21Z Drive chunk upload failed repeatedly",
-"tatt":3
+"terr":"2026-11-06T12:46:48Z MD5 mismatch (d77add5e127071bbd755933499527ded != d8b56b405f2458c16be7ebf605792410); deleted, will retry",
+"tatt":4
 },
 "pl:2026-01:g01":{
 "s":"ready",
@@ -266,11 +266,11 @@
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
 "fin":"2026-11-05T23:48:40Z",
-"terr":"2026-11-06T05:09:21Z Drive chunk upload failed repeatedly",
-"tatt":2
+"terr":"2026-11-06T12:56:21Z Drive chunk upload failed repeatedly",
+"tatt":3
 },
 "pl:2026-01:g02":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "req":{
@@ -395,7 +395,14 @@
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
 "sub":"2026-11-06T05:09:32Z",
-"rid":"958ff741-4f73-451b-912a-af97c74f9922"
+"rid":"958ff741-4f73-451b-912a-af97c74f9922",
+"chk":"2026-11-06T12:40:47Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-06/ad25d58178ae053e5972466e43e497c4.grib",
+"size":437002560,
+"md5":"cdfd89f90abb802227a6f93d7de350c8",
+"fin":"2026-11-06T12:40:47Z",
+"terr":"2026-11-06T12:57:35Z MD5 mismatch (4d351aaf15c71e1416c2aa11ee758924 != cdfd89f90abb802227a6f93d7de350c8); deleted, will retry",
+"tatt":1
 },
 "pl:2026-01:g03":{
 "s":"split",
@@ -406,7 +413,7 @@
 ]
 },
 "pl:2026-01:g03:p1":{
-"s":"pending",
+"s":"submitted",
 "parent":"pl:2026-01:g03",
 "req":{
 "product_type":[
@@ -528,10 +535,11 @@
 ]
 },
 "name":"era5_pl_202601_d-pv_p1.grib",
-"att":0,
+"att":1,
 "cov_checked":true,
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-05T07:14:08Z"
+"sub":"2026-11-06T12:57:44Z",
+"rid":"5397f992-981a-40cc-a7c0-975e0768ff63"
 },
 "pl:2026-01:g03:p2":{
 "s":"pending",
