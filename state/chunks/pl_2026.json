@@ -135,8 +135,8 @@
 "tatt":1
 },
 "pl:2026-01:g01":{
-"s":"failed",
-"att":1,
+"s":"submitted",
+"att":2,
 "cov_checked":true,
 "req":{
 "product_type":[
@@ -259,18 +259,16 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-05T18:34:58Z",
-"chk":"2026-11-05T23:48:39Z",
+"sub":"2026-11-07T11:52:15Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-05/30037ae074453805bed6c163411c16aa.grib",
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
 "fin":"2026-11-05T23:48:40Z",
 "terr":"2026-11-07T00:09:41Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
-"err":"transfer failed repeatedly: MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
-"retry_at":"2026-11-07T02:09:41Z"
+"rid":"b1bbd837-d69f-4e78-8cee-6cafe1c97c6b"
 },
 "pl:2026-01:g02":{
-"s":"ready",
+"s":"failed",
 "att":1,
 "cov_checked":true,
 "req":{
@@ -395,14 +393,14 @@
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
 "sub":"2026-11-06T05:09:32Z",
-"rid":"958ff741-4f73-451b-912a-af97c74f9922",
 "chk":"2026-11-06T12:40:47Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-06/ad25d58178ae053e5972466e43e497c4.grib",
 "size":437002560,
 "md5":"cdfd89f90abb802227a6f93d7de350c8",
 "fin":"2026-11-06T12:40:47Z",
-"terr":"2026-11-07T04:52:17Z Drive chunk upload failed repeatedly",
-"tatt":4
+"terr":"2026-11-07T11:40:06Z Drive chunk upload failed repeatedly",
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-07T13:40:06Z"
 },
 "pl:2026-01:g03":{
 "s":"split",
@@ -545,8 +543,8 @@
 "size":218501280,
 "md5":"b101ff811f2062c3c702448e8a4e26bf",
 "fin":"2026-11-06T19:49:12Z",
-"terr":"2026-11-07T04:52:59Z MD5 mismatch (080d62140753c26a8d5c0e8b37aa3848 != b101ff811f2062c3c702448e8a4e26bf); deleted, will retry",
-"tatt":3
+"terr":"2026-11-07T11:46:48Z MD5 mismatch (080d62140753c26a8d5c0e8b37aa3848 != b101ff811f2062c3c702448e8a4e26bf); deleted, will retry",
+"tatt":4
 },
 "pl:2026-01:g03:p2":{
 "s":"ready",
