@@ -135,7 +135,7 @@
 "tatt":1
 },
 "pl:2026-01:g01":{
-"s":"submitted",
+"s":"ready",
 "att":2,
 "cov_checked":true,
 "req":{
@@ -263,9 +263,10 @@
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-05/30037ae074453805bed6c163411c16aa.grib",
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
-"fin":"2026-11-05T23:48:40Z",
+"fin":"2026-11-07T16:57:44Z",
 "terr":"2026-11-07T00:09:41Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
-"rid":"b1bbd837-d69f-4e78-8cee-6cafe1c97c6b"
+"rid":"b1bbd837-d69f-4e78-8cee-6cafe1c97c6b",
+"chk":"2026-11-07T16:57:43Z"
 },
 "pl:2026-01:g02":{
 "s":"failed",
@@ -411,7 +412,7 @@
 ]
 },
 "pl:2026-01:g03:p1":{
-"s":"ready",
+"s":"failed",
 "parent":"pl:2026-01:g03",
 "req":{
 "product_type":[
@@ -537,14 +538,14 @@
 "cov_checked":true,
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
 "sub":"2026-11-06T12:57:44Z",
-"rid":"5397f992-981a-40cc-a7c0-975e0768ff63",
 "chk":"2026-11-06T19:49:12Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-06/684b1626b4ccabf90ae99b0ef5363096.grib",
 "size":218501280,
 "md5":"b101ff811f2062c3c702448e8a4e26bf",
 "fin":"2026-11-06T19:49:12Z",
-"terr":"2026-11-07T11:46:48Z MD5 mismatch (080d62140753c26a8d5c0e8b37aa3848 != b101ff811f2062c3c702448e8a4e26bf); deleted, will retry",
-"tatt":4
+"terr":"2026-11-07T17:19:43Z Drive chunk upload failed repeatedly",
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-07T19:19:43Z"
 },
 "pl:2026-01:g03:p2":{
 "s":"ready",
@@ -679,7 +680,7 @@
 "size":225784656,
 "md5":"e61da5731c872fbc053f6b6ebb289c23",
 "fin":"2026-11-06T23:56:04Z",
-"terr":"2026-11-07T04:58:40Z MD5 mismatch (facd6d0340e92e6f27e7f640305747ea != e61da5731c872fbc053f6b6ebb289c23); deleted, will retry",
-"tatt":1
+"terr":"2026-11-07T17:26:34Z Drive chunk upload failed repeatedly",
+"tatt":2
 }
 }
