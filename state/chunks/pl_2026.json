@@ -129,10 +129,10 @@
 "size":437002560,
 "md5":"d8b56b405f2458c16be7ebf605792410",
 "fin":"2026-11-07T04:38:25Z",
-"terr":"2026-11-07T20:59:47Z MD5 mismatch (d77add5e127071bbd755933499527ded != d8b56b405f2458c16be7ebf605792410); deleted, will retry",
+"terr":"2026-11-08T00:21:53Z MD5 mismatch (d77add5e127071bbd755933499527ded != d8b56b405f2458c16be7ebf605792410); deleted, will retry",
 "rid":"23d72d3b-0640-42af-805f-2717672fe828",
 "chk":"2026-11-07T04:38:25Z",
-"tatt":2
+"tatt":3
 },
 "pl:2026-01:g01":{
 "s":"ready",
@@ -264,13 +264,14 @@
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
 "fin":"2026-11-07T16:57:44Z",
-"terr":"2026-11-07T00:09:41Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
+"terr":"2026-11-08T00:31:12Z Drive chunk upload failed repeatedly",
 "rid":"b1bbd837-d69f-4e78-8cee-6cafe1c97c6b",
-"chk":"2026-11-07T16:57:43Z"
+"chk":"2026-11-07T16:57:43Z",
+"tatt":1
 },
 "pl:2026-01:g02":{
-"s":"failed",
-"att":1,
+"s":"submitted",
+"att":2,
 "cov_checked":true,
 "req":{
 "product_type":[
@@ -393,15 +394,13 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-06T05:09:32Z",
-"chk":"2026-11-06T12:40:47Z",
+"sub":"2026-11-08T00:31:21Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-06/ad25d58178ae053e5972466e43e497c4.grib",
 "size":437002560,
 "md5":"cdfd89f90abb802227a6f93d7de350c8",
 "fin":"2026-11-06T12:40:47Z",
 "terr":"2026-11-07T11:40:06Z Drive chunk upload failed repeatedly",
-"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
-"retry_at":"2026-11-07T13:40:06Z"
+"rid":"19d9676f-f0fa-45d8-9656-a74c3eda70b8"
 },
 "pl:2026-01:g03":{
 "s":"split",
@@ -680,7 +679,7 @@
 "size":225784656,
 "md5":"e61da5731c872fbc053f6b6ebb289c23",
 "fin":"2026-11-06T23:56:04Z",
-"terr":"2026-11-07T20:57:36Z Drive chunk upload failed repeatedly",
-"tatt":3
+"terr":"2026-11-08T00:15:42Z MD5 mismatch (facd6d0340e92e6f27e7f640305747ea != e61da5731c872fbc053f6b6ebb289c23); deleted, will retry",
+"tatt":4
 }
 }
