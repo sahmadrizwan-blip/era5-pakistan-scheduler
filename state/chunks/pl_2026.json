@@ -135,7 +135,7 @@
 "tatt":1
 },
 "pl:2026-01:g01":{
-"s":"submitted",
+"s":"ready",
 "att":3,
 "cov_checked":true,
 "req":{
@@ -263,13 +263,14 @@
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-05/30037ae074453805bed6c163411c16aa.grib",
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
-"fin":"2026-11-07T16:57:44Z",
+"fin":"2026-11-09T10:02:24Z",
 "terr":"2026-11-08T22:39:28Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
-"rid":"c3dccb8c-7e81-4784-81d7-c0d91f538777"
+"rid":"c3dccb8c-7e81-4784-81d7-c0d91f538777",
+"chk":"2026-11-09T10:02:24Z"
 },
 "pl:2026-01:g02":{
-"s":"failed",
-"att":2,
+"s":"submitted",
+"att":3,
 "cov_checked":true,
 "req":{
 "product_type":[
@@ -392,15 +393,13 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-08T00:31:21Z",
+"sub":"2026-11-09T10:26:17Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-06/ad25d58178ae053e5972466e43e497c4.grib",
 "size":437002560,
 "md5":"cdfd89f90abb802227a6f93d7de350c8",
 "fin":"2026-11-08T06:27:23Z",
 "terr":"2026-11-09T02:26:29Z Drive chunk upload failed repeatedly",
-"chk":"2026-11-08T06:27:22Z",
-"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
-"retry_at":"2026-11-09T06:26:29Z"
+"rid":"0ce3f7cd-a5c7-465a-8a80-22793367323b"
 },
 "pl:2026-01:g03":{
 "s":"split",
@@ -411,7 +410,7 @@
 ]
 },
 "pl:2026-01:g03:p1":{
-"s":"ready",
+"s":"failed",
 "parent":"pl:2026-01:g03",
 "req":{
 "product_type":[
@@ -541,10 +540,10 @@
 "size":218501280,
 "md5":"b101ff811f2062c3c702448e8a4e26bf",
 "fin":"2026-11-08T13:45:30Z",
-"terr":"2026-11-09T02:32:14Z Drive chunk upload failed repeatedly",
-"rid":"ce8f97ea-664b-4415-8d92-8c4115f8c37d",
+"terr":"2026-11-09T10:20:25Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-08T13:45:30Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-09T14:20:25Z"
 },
 "pl:2026-01:g03:p2":{
 "s":"ready",
@@ -677,9 +676,9 @@
 "size":225784656,
 "md5":"e61da5731c872fbc053f6b6ebb289c23",
 "fin":"2026-11-08T18:37:32Z",
-"terr":"2026-11-09T02:38:14Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-09T10:26:07Z Drive chunk upload failed repeatedly",
 "rid":"218a5397-db79-41b3-bf1b-384472f810b4",
 "chk":"2026-11-08T18:37:31Z",
-"tatt":3
+"tatt":4
 }
 }
