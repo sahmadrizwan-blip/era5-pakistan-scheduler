@@ -418,8 +418,10 @@
    },
    "created": "2026-11-08T14:09:10.077937",
    "ds": "reanalysis-era5-complete",
+   "fid": "1aJwnklZlviVOAQo4_E_HKNxEipViPBY8",
    "fin": null,
    "md5": "6d28a1c46aadd017781d9cbc8157d826",
+   "pulled": true,
    "req": {
     "area": "37.5/60.5/23.5/78",
     "class": "ea",
