@@ -411,7 +411,7 @@
 ]
 },
 "pl:2026-01:g03:p1":{
-"s":"failed",
+"s":"submitted",
 "parent":"pl:2026-01:g03",
 "req":{
 "product_type":[
@@ -533,18 +533,16 @@
 ]
 },
 "name":"era5_pl_202601_d-pv_p1.grib",
-"att":2,
+"att":3,
 "cov_checked":true,
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-08T06:48:38Z",
+"sub":"2026-11-10T03:31:43Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-06/684b1626b4ccabf90ae99b0ef5363096.grib",
 "size":218501280,
 "md5":"b101ff811f2062c3c702448e8a4e26bf",
 "fin":"2026-11-08T13:45:30Z",
 "terr":"2026-11-09T10:20:25Z Drive chunk upload failed repeatedly",
-"chk":"2026-11-08T13:45:30Z",
-"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
-"retry_at":"2026-11-09T14:20:25Z"
+"rid":"22984620-f73e-4f06-ad32-f77a0a56a31f"
 },
 "pl:2026-01:g03:p2":{
 "s":"failed",
