@@ -264,10 +264,10 @@
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
 "fin":"2026-11-09T10:02:24Z",
-"terr":"2026-11-11T04:29:48Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
+"terr":"2026-11-11T12:19:27Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
 "rid":"c3dccb8c-7e81-4784-81d7-c0d91f538777",
 "chk":"2026-11-09T10:02:24Z",
-"tatt":3
+"tatt":4
 },
 "pl:2026-01:g02":{
 "s":"ready",
@@ -399,10 +399,10 @@
 "size":437002560,
 "md5":"cdfd89f90abb802227a6f93d7de350c8",
 "fin":"2026-11-09T20:55:12Z",
-"terr":"2026-11-11T04:35:47Z MD5 mismatch (4d351aaf15c71e1416c2aa11ee758924 != cdfd89f90abb802227a6f93d7de350c8); deleted, will retry",
+"terr":"2026-11-11T12:27:41Z MD5 mismatch (4d351aaf15c71e1416c2aa11ee758924 != cdfd89f90abb802227a6f93d7de350c8); deleted, will retry",
 "rid":"0ce3f7cd-a5c7-465a-8a80-22793367323b",
 "chk":"2026-11-09T20:55:12Z",
-"tatt":1
+"tatt":2
 },
 "pl:2026-01:g03":{
 "s":"split",
@@ -549,7 +549,7 @@
 "tatt":1
 },
 "pl:2026-01:g03:p2":{
-"s":"submitted",
+"s":"ready",
 "parent":"pl:2026-01:g03",
 "req":{
 "product_type":[
@@ -678,8 +678,9 @@
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-06/c8881a4bef46a5a901458ee7e6d2cfa1.grib",
 "size":225784656,
 "md5":"e61da5731c872fbc053f6b6ebb289c23",
-"fin":"2026-11-08T18:37:32Z",
+"fin":"2026-11-11T12:00:29Z",
 "terr":"2026-11-09T21:10:43Z MD5 mismatch (facd6d0340e92e6f27e7f640305747ea != e61da5731c872fbc053f6b6ebb289c23); deleted, will retry",
-"rid":"1aeccb0f-b755-4bae-9df4-b1a1b04cde13"
+"rid":"1aeccb0f-b755-4bae-9df4-b1a1b04cde13",
+"chk":"2026-11-11T12:00:28Z"
 }
 }
