@@ -1,6 +1,6 @@
 {
 "pl:2026-01:g00":{
-"s":"ready",
+"s":"failed",
 "att":3,
 "cov_checked":true,
 "req":{
@@ -129,10 +129,10 @@
 "size":437002560,
 "md5":"d8b56b405f2458c16be7ebf605792410",
 "fin":"2026-11-09T02:20:15Z",
-"terr":"2026-11-10T19:08:04Z Drive chunk upload failed repeatedly",
-"rid":"51697037-2682-4f04-98b5-a03d9a71e003",
+"terr":"2026-11-10T23:58:28Z MD5 mismatch (d77add5e127071bbd755933499527ded != d8b56b405f2458c16be7ebf605792410); deleted, will retry",
 "chk":"2026-11-09T02:20:14Z",
-"tatt":4
+"err":"transfer failed repeatedly: MD5 mismatch (d77add5e127071bbd755933499527ded != d8b56b405f2458c16be7ebf605792410); deleted, will retry",
+"retry_at":"2026-11-11T05:58:28Z"
 },
 "pl:2026-01:g01":{
 "s":"ready",
@@ -264,10 +264,10 @@
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
 "fin":"2026-11-09T10:02:24Z",
-"terr":"2026-11-10T19:14:19Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-11T00:09:42Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
 "rid":"c3dccb8c-7e81-4784-81d7-c0d91f538777",
 "chk":"2026-11-09T10:02:24Z",
-"tatt":1
+"tatt":2
 },
 "pl:2026-01:g02":{
 "s":"ready",
