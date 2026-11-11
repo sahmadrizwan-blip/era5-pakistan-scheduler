@@ -135,7 +135,7 @@
 "retry_at":"2026-11-11T05:58:28Z"
 },
 "pl:2026-01:g01":{
-"s":"ready",
+"s":"failed",
 "att":3,
 "cov_checked":true,
 "req":{
@@ -264,10 +264,10 @@
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
 "fin":"2026-11-09T10:02:24Z",
-"terr":"2026-11-11T12:19:27Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
-"rid":"c3dccb8c-7e81-4784-81d7-c0d91f538777",
+"terr":"2026-11-11T19:56:51Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
 "chk":"2026-11-09T10:02:24Z",
-"tatt":4
+"err":"transfer failed repeatedly: MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
+"retry_at":"2026-11-12T01:56:51Z"
 },
 "pl:2026-01:g02":{
 "s":"ready",
@@ -399,10 +399,10 @@
 "size":437002560,
 "md5":"cdfd89f90abb802227a6f93d7de350c8",
 "fin":"2026-11-09T20:55:12Z",
-"terr":"2026-11-11T12:27:41Z MD5 mismatch (4d351aaf15c71e1416c2aa11ee758924 != cdfd89f90abb802227a6f93d7de350c8); deleted, will retry",
+"terr":"2026-11-11T20:00:36Z MD5 mismatch (4d351aaf15c71e1416c2aa11ee758924 != cdfd89f90abb802227a6f93d7de350c8); deleted, will retry",
 "rid":"0ce3f7cd-a5c7-465a-8a80-22793367323b",
 "chk":"2026-11-09T20:55:12Z",
-"tatt":2
+"tatt":3
 },
 "pl:2026-01:g03":{
 "s":"split",
@@ -543,10 +543,10 @@
 "size":218501280,
 "md5":"b101ff811f2062c3c702448e8a4e26bf",
 "fin":"2026-11-10T11:29:35Z",
-"terr":"2026-11-11T04:41:39Z MD5 mismatch (080d62140753c26a8d5c0e8b37aa3848 != b101ff811f2062c3c702448e8a4e26bf); deleted, will retry",
+"terr":"2026-11-11T20:08:35Z MD5 mismatch (080d62140753c26a8d5c0e8b37aa3848 != b101ff811f2062c3c702448e8a4e26bf); deleted, will retry",
 "rid":"22984620-f73e-4f06-ad32-f77a0a56a31f",
 "chk":"2026-11-10T11:29:32Z",
-"tatt":1
+"tatt":2
 },
 "pl:2026-01:g03:p2":{
 "s":"ready",
