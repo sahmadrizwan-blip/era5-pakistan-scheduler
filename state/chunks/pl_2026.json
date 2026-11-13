@@ -129,10 +129,10 @@
 "size":437002560,
 "md5":"d8b56b405f2458c16be7ebf605792410",
 "fin":"2026-11-12T09:10:21Z",
-"terr":"2026-11-13T03:36:25Z MD5 mismatch (d77add5e127071bbd755933499527ded != d8b56b405f2458c16be7ebf605792410); deleted, will retry",
+"terr":"2026-11-13T11:45:12Z Drive chunk upload failed repeatedly",
 "rid":"503ace60-bbb8-47cd-8376-e9e934fa685c",
 "chk":"2026-11-12T09:10:20Z",
-"tatt":2
+"tatt":3
 },
 "pl:2026-01:g01":{
 "s":"ready",
@@ -264,10 +264,10 @@
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
 "fin":"2026-11-12T23:07:50Z",
-"terr":"2026-11-13T03:38:28Z MD5 mismatch (dccc9714297990c4f594d33767ad4eb9 != 25e094a11b5ec62817cc0dfc54eb3e64); deleted, will retry",
+"terr":"2026-11-13T11:55:22Z Drive chunk upload failed repeatedly",
 "rid":"86e2136a-ad6c-4db6-aa1e-a261ced821b2",
 "chk":"2026-11-12T23:07:50Z",
-"tatt":2
+"tatt":3
 },
 "pl:2026-01:g02":{
 "s":"ready",
@@ -549,7 +549,7 @@
 "retry_at":"2026-11-13T05:13:41Z"
 },
 "pl:2026-01:g03:p2":{
-"s":"ready",
+"s":"failed",
 "parent":"pl:2026-01:g03",
 "req":{
 "product_type":[
@@ -679,13 +679,13 @@
 "size":225784656,
 "md5":"e61da5731c872fbc053f6b6ebb289c23",
 "fin":"2026-11-11T12:00:29Z",
-"terr":"2026-11-13T03:35:31Z Drive chunk upload failed repeatedly",
-"rid":"1aeccb0f-b755-4bae-9df4-b1a1b04cde13",
+"terr":"2026-11-13T11:33:46Z MD5 mismatch (facd6d0340e92e6f27e7f640305747ea != e61da5731c872fbc053f6b6ebb289c23); deleted, will retry",
 "chk":"2026-11-11T12:00:28Z",
-"tatt":4
+"err":"transfer failed repeatedly: MD5 mismatch (facd6d0340e92e6f27e7f640305747ea != e61da5731c872fbc053f6b6ebb289c23); deleted, will retry",
+"retry_at":"2026-11-13T17:33:46Z"
 },
 "pl:2026-01:g04":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "req":{
@@ -810,6 +810,11 @@
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
 "rid":"5be15de6-2e5f-4da2-8bba-76f214bfc968",
-"sub":"2026-11-13T03:44:37Z"
+"sub":"2026-11-13T03:44:37Z",
+"chk":"2026-11-13T11:27:36Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-13/9855efe3533c44b7aa4fc864e3317821.grib",
+"size":437002560,
+"md5":"6d30315d015d5ae6e5a589cd9341d37",
+"fin":"2026-11-13T11:27:37Z"
 }
 }
