@@ -129,10 +129,10 @@
 "size":437002560,
 "md5":"d8b56b405f2458c16be7ebf605792410",
 "fin":"2026-11-12T09:10:21Z",
-"terr":"2026-11-13T11:45:12Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-13T19:01:45Z MD5 mismatch (d77add5e127071bbd755933499527ded != d8b56b405f2458c16be7ebf605792410); deleted, will retry",
 "rid":"503ace60-bbb8-47cd-8376-e9e934fa685c",
 "chk":"2026-11-12T09:10:20Z",
-"tatt":3
+"tatt":4
 },
 "pl:2026-01:g01":{
 "s":"ready",
