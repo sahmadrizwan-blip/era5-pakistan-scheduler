@@ -263,10 +263,10 @@
 "size":437002560,
 "md5":"25e094a11b5ec62817cc0dfc54eb3e64",
 "fin":"2026-11-12T23:07:50Z",
-"terr":"2026-11-13T11:55:22Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-14T07:01:18Z Drive chunk upload failed repeatedly",
 "rid":"86e2136a-ad6c-4db6-aa1e-a261ced821b2",
 "chk":"2026-11-12T23:07:50Z",
-"tatt":3
+"tatt":4
 },
 "pl:2026-01:g02":{
 "s":"ready",
@@ -398,10 +398,10 @@
 "size":437002560,
 "md5":"cdfd89f90abb802227a6f93d7de350c8",
 "fin":"2026-11-13T03:29:35Z",
-"terr":"2026-11-13T03:44:25Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-14T07:08:19Z Drive chunk upload failed repeatedly",
 "rid":"00fd89d7-7a50-4ff8-825b-72e52ca3bff3",
 "chk":"2026-11-13T03:29:35Z",
-"tatt":1
+"tatt":2
 },
 "pl:2026-01:g03":{
 "s":"split",
@@ -412,7 +412,7 @@
 ]
 },
 "pl:2026-01:g03:p1":{
-"s":"failed",
+"s":"submitted",
 "parent":"pl:2026-01:g03",
 "req":{
 "product_type":[
@@ -534,18 +534,16 @@
 ]
 },
 "name":"era5_pl_202601_d-pv_p1.grib",
-"att":3,
+"att":4,
 "cov_checked":true,
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-10T03:31:43Z",
+"sub":"2026-11-14T07:15:15Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-06/684b1626b4ccabf90ae99b0ef5363096.grib",
 "size":218501280,
 "md5":"b101ff811f2062c3c702448e8a4e26bf",
 "fin":"2026-11-10T11:29:35Z",
 "terr":"2026-11-12T23:13:41Z MD5 mismatch (080d62140753c26a8d5c0e8b37aa3848 != b101ff811f2062c3c702448e8a4e26bf); deleted, will retry",
-"chk":"2026-11-10T11:29:32Z",
-"err":"transfer failed repeatedly: MD5 mismatch (080d62140753c26a8d5c0e8b37aa3848 != b101ff811f2062c3c702448e8a4e26bf); deleted, will retry",
-"retry_at":"2026-11-13T05:13:41Z"
+"rid":"fac6870b-7017-490b-a9e2-323dd8b476d0"
 },
 "pl:2026-01:g03:p2":{
 "s":"failed",
@@ -814,6 +812,8 @@
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-13/9855efe3533c44b7aa4fc864e3317821.grib",
 "size":437002560,
 "md5":"6d30315d015d5ae6e5a589cd9341d37",
-"fin":"2026-11-13T11:27:37Z"
+"fin":"2026-11-13T11:27:37Z",
+"terr":"2026-11-14T07:15:03Z Drive chunk upload failed repeatedly",
+"tatt":1
 }
 }
