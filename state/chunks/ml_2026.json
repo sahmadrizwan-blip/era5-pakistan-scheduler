@@ -26,7 +26,7 @@
 "err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "ml:2026-01-03":{
-"s":"ready",
+"s":"dead",
 "att":4,
 "cov_checked":true,
 "sub":"2026-11-12T18:04:58Z",
@@ -34,10 +34,9 @@
 "size":339855225,
 "md5":"7b7db9eec360aae43d1836971e8ab520",
 "fin":"2026-11-12T23:07:49Z",
-"terr":"2026-11-13T19:08:17Z Drive chunk upload failed repeatedly",
-"rid":"a34c8228-a433-43cc-ba9c-65a167f3d0d8",
+"terr":"2026-11-14T00:32:11Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-12T23:07:49Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "ml:2026-01-04":{
 "s":"failed",

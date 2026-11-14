@@ -1,6 +1,6 @@
 {
 "pl:2026-01:g00":{
-"s":"ready",
+"s":"dead",
 "att":4,
 "cov_checked":true,
 "req":{
@@ -129,10 +129,9 @@
 "size":437002560,
 "md5":"d8b56b405f2458c16be7ebf605792410",
 "fin":"2026-11-12T09:10:21Z",
-"terr":"2026-11-13T19:01:45Z MD5 mismatch (d77add5e127071bbd755933499527ded != d8b56b405f2458c16be7ebf605792410); deleted, will retry",
-"rid":"503ace60-bbb8-47cd-8376-e9e934fa685c",
+"terr":"2026-11-14T00:23:17Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-12T09:10:20Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "pl:2026-01:g01":{
 "s":"ready",
