@@ -47,10 +47,10 @@
 "size":339968541,
 "md5":"48922ed5af4e1bf017ef37b566f3a095",
 "fin":"2026-11-14T13:54:55Z",
-"terr":"2026-11-14T23:04:52Z MD5 mismatch (0d028737f06f7e906b6052e2e60fe260 != 48922ed5af4e1bf017ef37b566f3a095); deleted, will retry",
+"terr":"2026-11-15T02:40:05Z Drive chunk upload failed repeatedly",
 "rid":"28488019-78f6-4099-9eb9-5a0bbc59d409",
 "chk":"2026-11-14T13:54:54Z",
-"tatt":3
+"tatt":4
 },
 "ml:2026-01-05":{
 "s":"failed",
@@ -67,18 +67,18 @@
 "retry_at":"2026-11-15T04:52:46Z"
 },
 "ml:2026-01-06":{
-"s":"ready",
+"s":"failed",
 "att":1,
 "cov_checked":true,
-"rid":"060ee56a-865a-4a0b-9445-0b09c3ba0192",
 "sub":"2026-11-13T03:44:45Z",
 "chk":"2026-11-13T11:27:35Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-13/6549f2b4667738c032cd17de2b059742.grib",
 "size":338289036,
 "md5":"e0d3cd6c30af04a4ea72abdd3d704dec",
 "fin":"2026-11-13T11:27:36Z",
-"terr":"2026-11-14T22:58:44Z MD5 mismatch (2eea0c928ae048a9a86543d0a6128962 != e0d3cd6c30af04a4ea72abdd3d704dec); deleted, will retry",
-"tatt":4
+"terr":"2026-11-15T02:28:26Z MD5 mismatch (2eea0c928ae048a9a86543d0a6128962 != e0d3cd6c30af04a4ea72abdd3d704dec); deleted, will retry",
+"err":"transfer failed repeatedly: MD5 mismatch (2eea0c928ae048a9a86543d0a6128962 != e0d3cd6c30af04a4ea72abdd3d704dec); deleted, will retry",
+"retry_at":"2026-11-15T04:28:26Z"
 },
 "ml:2026-01-07":{
 "s":"ready",
@@ -91,14 +91,19 @@
 "size":337135641,
 "md5":"c3c5531f3c3d98b1a2a5a75c214cb54d",
 "fin":"2026-11-14T22:52:16Z",
-"terr":"2026-11-14T23:16:11Z Drive chunk upload failed repeatedly",
-"tatt":1
+"terr":"2026-11-15T02:46:20Z Drive chunk upload failed repeatedly",
+"tatt":2
 },
 "ml:2026-01-08":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "rid":"f568216d-866b-4000-baa7-a161d983d948",
-"sub":"2026-11-14T23:16:28Z"
+"sub":"2026-11-14T23:16:28Z",
+"chk":"2026-11-15T02:20:55Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2026-11-14/1173d8c7bd15901992089a136f8a7a58.grib",
+"size":328689552,
+"md5":"8fdb5b80296af14611c03dc6013ed508",
+"fin":"2026-11-15T02:20:57Z"
 }
 }
