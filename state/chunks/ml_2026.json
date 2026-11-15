@@ -39,7 +39,7 @@
 "err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "ml:2026-01-04":{
-"s":"ready",
+"s":"dead",
 "att":4,
 "cov_checked":true,
 "sub":"2026-11-14T07:15:22Z",
@@ -47,24 +47,21 @@
 "size":339968541,
 "md5":"48922ed5af4e1bf017ef37b566f3a095",
 "fin":"2026-11-14T13:54:55Z",
-"terr":"2026-11-15T02:40:05Z Drive chunk upload failed repeatedly",
-"rid":"28488019-78f6-4099-9eb9-5a0bbc59d409",
+"terr":"2026-11-15T09:56:08Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-14T13:54:54Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "ml:2026-01-05":{
-"s":"failed",
-"att":3,
+"s":"submitted",
+"att":4,
 "cov_checked":true,
-"sub":"2026-11-12T23:29:53Z",
+"sub":"2026-11-15T10:04:43Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-12/aec8e37fdbcb7261988efad4f5ffb94d.grib",
 "size":340102092,
 "md5":"6d28a1c46aadd017781d9cbc8157d826",
 "fin":"2026-11-13T03:29:34Z",
 "terr":"2026-11-14T22:52:46Z MD5 mismatch (728aa71c83d1021280894765f325cc0f != 6d28a1c46aadd017781d9cbc8157d826); deleted, will retry",
-"chk":"2026-11-13T03:29:34Z",
-"err":"transfer failed repeatedly: MD5 mismatch (728aa71c83d1021280894765f325cc0f != 6d28a1c46aadd017781d9cbc8157d826); deleted, will retry",
-"retry_at":"2026-11-15T04:52:46Z"
+"rid":"2acee00f-c3f6-4b13-9e44-c06fd6e2eb5b"
 },
 "ml:2026-01-06":{
 "s":"failed",
@@ -91,8 +88,8 @@
 "size":337135641,
 "md5":"c3c5531f3c3d98b1a2a5a75c214cb54d",
 "fin":"2026-11-14T22:52:16Z",
-"terr":"2026-11-15T02:46:20Z Drive chunk upload failed repeatedly",
-"tatt":2
+"terr":"2026-11-15T09:57:43Z MD5 mismatch (0474d428eb5902a58f17dd4366f23994 != c3c5531f3c3d98b1a2a5a75c214cb54d); deleted, will retry",
+"tatt":3
 },
 "ml:2026-01-08":{
 "s":"ready",
@@ -104,6 +101,8 @@
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2026-11-14/1173d8c7bd15901992089a136f8a7a58.grib",
 "size":328689552,
 "md5":"8fdb5b80296af14611c03dc6013ed508",
-"fin":"2026-11-15T02:20:57Z"
+"fin":"2026-11-15T02:20:57Z",
+"terr":"2026-11-15T09:58:47Z MD5 mismatch (bd6614cef49c68bc681fd2fe48f1e72b != 8fdb5b80296af14611c03dc6013ed508); deleted, will retry",
+"tatt":1
 }
 }
