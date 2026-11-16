@@ -545,7 +545,7 @@
 "err":"transfer failed repeatedly: MD5 mismatch (080d62140753c26a8d5c0e8b37aa3848 != b101ff811f2062c3c702448e8a4e26bf); deleted, will retry"
 },
 "pl:2026-01:g03:p2":{
-"s":"ready",
+"s":"dead",
 "parent":"pl:2026-01:g03",
 "req":{
 "product_type":[
@@ -675,10 +675,9 @@
 "size":225784656,
 "md5":"e61da5731c872fbc053f6b6ebb289c23",
 "fin":"2026-11-14T22:52:17Z",
-"terr":"2026-11-16T01:23:38Z MD5 mismatch (facd6d0340e92e6f27e7f640305747ea != e61da5731c872fbc053f6b6ebb289c23); deleted, will retry",
-"rid":"5510fcc9-3c92-4f08-b6b0-77a55d5999c7",
+"terr":"2026-11-16T08:21:08Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-14T22:52:17Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "pl:2026-01:g04":{
 "s":"ready",
@@ -810,13 +809,13 @@
 "size":437002560,
 "md5":"6d30315d015d5ae6e5a589cd9341d37",
 "fin":"2026-11-15T16:45:33Z",
-"terr":"2026-11-16T01:35:59Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-16T08:42:09Z Drive chunk upload failed repeatedly",
 "rid":"c6f4c1b6-69f0-4792-8788-249216ba1e98",
 "chk":"2026-11-15T16:45:32Z",
-"tatt":2
+"tatt":3
 },
 "pl:2026-01:g05":{
-"s":"ready",
+"s":"failed",
 "att":1,
 "cov_checked":true,
 "req":{
@@ -940,18 +939,18 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"rid":"a63774d2-1c09-4b05-8a4b-2e2e4aed6df8",
 "sub":"2026-11-14T23:16:20Z",
 "chk":"2026-11-15T02:20:59Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-14/bbf3b69f27403ef1f1b0dee303619a30.grib",
 "size":355180336,
 "md5":"c93faffa7fdf8c03a3dc700bc009fba7",
 "fin":"2026-11-15T02:21:00Z",
-"terr":"2026-11-16T01:24:42Z MD5 mismatch (e962c847f2771714f93cb04abc6eb8b7 != c93faffa7fdf8c03a3dc700bc009fba7); deleted, will retry",
-"tatt":4
+"terr":"2026-11-16T08:33:04Z Drive chunk upload failed repeatedly",
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-16T10:33:04Z"
 },
 "pl:2026-01:g06":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "req":{
@@ -1076,6 +1075,11 @@
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
 "rid":"93b18cc7-16c5-4672-ba5c-b53350bfd14f",
-"sub":"2026-11-16T01:36:09Z"
+"sub":"2026-11-16T01:36:09Z",
+"chk":"2026-11-16T08:15:17Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-16/875d8c8cf6ba8d7376018673a223dd72.grib",
+"size":365462256,
+"md5":"4f5384b24ae973399ba85a7f3b832995",
+"fin":"2026-11-16T08:15:17Z"
 }
 }
