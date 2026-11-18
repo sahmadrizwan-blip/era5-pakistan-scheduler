@@ -79,7 +79,7 @@
 "retry_at":"2026-11-18T06:07:10Z"
 },
 "ml:2026-01-07":{
-"s":"ready",
+"s":"failed",
 "att":2,
 "cov_checked":true,
 "sub":"2026-11-16T19:02:06Z",
@@ -87,10 +87,10 @@
 "size":337135641,
 "md5":"c3c5531f3c3d98b1a2a5a75c214cb54d",
 "fin":"2026-11-17T02:15:37Z",
-"terr":"2026-11-18T02:13:17Z Drive chunk upload failed repeatedly",
-"rid":"65227c83-3434-4c94-8a2a-ee9d1c6b3814",
+"terr":"2026-11-18T10:29:38Z MD5 mismatch (0474d428eb5902a58f17dd4366f23994 != c3c5531f3c3d98b1a2a5a75c214cb54d); deleted, will retry",
 "chk":"2026-11-17T02:15:36Z",
-"tatt":4
+"err":"transfer failed repeatedly: MD5 mismatch (0474d428eb5902a58f17dd4366f23994 != c3c5531f3c3d98b1a2a5a75c214cb54d); deleted, will retry",
+"retry_at":"2026-11-18T14:29:38Z"
 },
 "ml:2026-01-08":{
 "s":"ready",
@@ -101,10 +101,10 @@
 "size":328689552,
 "md5":"8fdb5b80296af14611c03dc6013ed508",
 "fin":"2026-11-17T10:56:12Z",
-"terr":"2026-11-18T02:19:16Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-18T10:35:46Z MD5 mismatch (bd6614cef49c68bc681fd2fe48f1e72b != 8fdb5b80296af14611c03dc6013ed508); deleted, will retry",
 "rid":"f52604fa-6172-46e0-a8d8-89572a697888",
 "chk":"2026-11-17T10:56:12Z",
-"tatt":2
+"tatt":3
 },
 "ml:2026-01-09":{
 "s":"ready",
@@ -116,13 +116,22 @@
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-17/460e44fc87679b6892059aace748a901.grib",
 "size":329940075,
 "md5":"51b8e45ddafc8bfcd71c05124c6fa42c",
-"fin":"2026-11-18T02:01:34Z"
+"fin":"2026-11-18T02:01:34Z",
+"terr":"2026-11-18T10:48:28Z MD5 mismatch (fcec97fbefe9296e26b4577d8e7cffa3 != 51b8e45ddafc8bfcd71c05124c6fa42c); deleted, will retry",
+"tatt":1
 },
 "ml:2026-01-10":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "rid":"7bfd5105-ecac-45b9-8fad-b7394b43ad26",
-"sub":"2026-11-18T02:25:49Z"
+"sub":"2026-11-18T02:25:49Z",
+"chk":"2026-11-18T10:28:05Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-18/689eedcf81af17b796bd73537ebdfc05.grib",
+"size":338746347,
+"md5":"cb0dfc965fc0859053cbd2295db2a7f7",
+"fin":"2026-11-18T10:28:07Z",
+"terr":"2026-11-18T10:48:52Z MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
+"tatt":1
 }
 }
