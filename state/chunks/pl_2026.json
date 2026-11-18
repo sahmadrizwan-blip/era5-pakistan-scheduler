@@ -809,9 +809,10 @@
 "size":437002560,
 "md5":"6d30315d015d5ae6e5a589cd9341d37",
 "fin":"2026-11-17T19:38:09Z",
-"terr":"2026-11-17T02:25:47Z MD5 mismatch (7fba40b241adbbaf1496f4791daa7231 != 6d30315d015d5ae6e5a589cd9341d37); deleted, will retry",
+"terr":"2026-11-18T02:25:30Z Drive chunk upload failed repeatedly",
 "rid":"b5eb4831-94f0-4325-bcfd-f0ad8c56e750",
-"chk":"2026-11-17T19:38:05Z"
+"chk":"2026-11-17T19:38:05Z",
+"tatt":1
 },
 "pl:2026-01:g05":{
 "s":"ready",
@@ -943,13 +944,13 @@
 "size":355180336,
 "md5":"c93faffa7fdf8c03a3dc700bc009fba7",
 "fin":"2026-11-17T02:15:38Z",
-"terr":"2026-11-17T20:02:05Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-18T02:13:46Z MD5 mismatch (e962c847f2771714f93cb04abc6eb8b7 != c93faffa7fdf8c03a3dc700bc009fba7); deleted, will retry",
 "rid":"e48f4474-c383-4f6b-a24a-3b682bffcf94",
 "chk":"2026-11-17T02:15:38Z",
-"tatt":3
+"tatt":4
 },
 "pl:2026-01:g06":{
-"s":"ready",
+"s":"failed",
 "att":1,
 "cov_checked":true,
 "req":{
@@ -1073,15 +1074,15 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"rid":"93b18cc7-16c5-4672-ba5c-b53350bfd14f",
 "sub":"2026-11-16T01:36:09Z",
 "chk":"2026-11-16T08:15:17Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-16/875d8c8cf6ba8d7376018673a223dd72.grib",
 "size":365462256,
 "md5":"4f5384b24ae973399ba85a7f3b832995",
 "fin":"2026-11-16T08:15:17Z",
-"terr":"2026-11-17T19:50:22Z Drive chunk upload failed repeatedly",
-"tatt":4
+"terr":"2026-11-18T02:07:50Z MD5 mismatch (d49ee25c77f2c1e17b9a9fb87dd1456f != 4f5384b24ae973399ba85a7f3b832995); deleted, will retry",
+"err":"transfer failed repeatedly: MD5 mismatch (d49ee25c77f2c1e17b9a9fb87dd1456f != 4f5384b24ae973399ba85a7f3b832995); deleted, will retry",
+"retry_at":"2026-11-18T04:07:50Z"
 },
 "pl:2026-01:g07":{
 "s":"ready",
@@ -1215,12 +1216,14 @@
 "size":437002560,
 "md5":"fabf30fd8cb699d3dce840b6a44eed76",
 "fin":"2026-11-17T10:56:13Z",
-"terr":"2026-11-17T11:15:24Z Drive chunk upload failed repeatedly",
-"tatt":1
+"terr":"2026-11-18T02:19:54Z MD5 mismatch (e9a4137b4202bdf0814eb528e5efc739 != fabf30fd8cb699d3dce840b6a44eed76); deleted, will retry",
+"tatt":2
 },
 "pl:2026-02:g00":{
-"s":"pending",
-"att":0,
-"cov_checked":true
+"s":"submitted",
+"att":1,
+"cov_checked":true,
+"rid":"0c33bc83-a28a-424b-b8f1-6a509e9d8e7b",
+"sub":"2026-11-18T02:25:40Z"
 }
 }

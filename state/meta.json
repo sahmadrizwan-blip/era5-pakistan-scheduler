@@ -5470,7 +5470,7 @@
     ]
    },
    "size": null,
-   "status": "accepted",
+   "status": "successful",
    "url": null
   },
   "958ff741-4f73-451b-912a-af97c74f9922": {
@@ -8921,6 +8921,6 @@
    "url": "https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-06/26803825c27c076862427ddbe867498f.grib"
   }
  },
- "jobs_scanned_until": "2026-11-17T16:05:15.941182",
+ "jobs_scanned_until": "2026-11-17T20:02:06.833464",
  "licences_checked": "2026-11-17T19:37:57Z"
 }

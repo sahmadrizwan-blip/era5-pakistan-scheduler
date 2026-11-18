@@ -65,7 +65,7 @@
 "err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "ml:2026-01-06":{
-"s":"ready",
+"s":"failed",
 "att":2,
 "cov_checked":true,
 "sub":"2026-11-16T01:36:18Z",
@@ -73,10 +73,10 @@
 "size":338289036,
 "md5":"e0d3cd6c30af04a4ea72abdd3d704dec",
 "fin":"2026-11-16T08:15:16Z",
-"terr":"2026-11-17T19:44:16Z Drive chunk upload failed repeatedly",
-"rid":"221f8f35-45eb-4a6e-ae6c-83b4f716d0a1",
+"terr":"2026-11-18T02:07:10Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-16T08:15:16Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-18T06:07:10Z"
 },
 "ml:2026-01-07":{
 "s":"ready",
@@ -87,10 +87,10 @@
 "size":337135641,
 "md5":"c3c5531f3c3d98b1a2a5a75c214cb54d",
 "fin":"2026-11-17T02:15:37Z",
-"terr":"2026-11-17T19:56:02Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-18T02:13:17Z Drive chunk upload failed repeatedly",
 "rid":"65227c83-3434-4c94-8a2a-ee9d1c6b3814",
 "chk":"2026-11-17T02:15:36Z",
-"tatt":3
+"tatt":4
 },
 "ml:2026-01-08":{
 "s":"ready",
@@ -101,17 +101,28 @@
 "size":328689552,
 "md5":"8fdb5b80296af14611c03dc6013ed508",
 "fin":"2026-11-17T10:56:12Z",
-"terr":"2026-11-17T11:09:47Z MD5 mismatch (bd6614cef49c68bc681fd2fe48f1e72b != 8fdb5b80296af14611c03dc6013ed508); deleted, will retry",
+"terr":"2026-11-18T02:19:16Z Drive chunk upload failed repeatedly",
 "rid":"f52604fa-6172-46e0-a8d8-89572a697888",
 "chk":"2026-11-17T10:56:12Z",
-"tatt":1
+"tatt":2
 },
 "ml:2026-01-09":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "rid":"b4dfb8a3-56fe-4611-bef9-3b92ecad7311",
 "sub":"2026-11-17T11:15:42Z",
-"chk":"2026-11-17T19:38:05Z"
+"chk":"2026-11-18T02:01:33Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-17/460e44fc87679b6892059aace748a901.grib",
+"size":329940075,
+"md5":"51b8e45ddafc8bfcd71c05124c6fa42c",
+"fin":"2026-11-18T02:01:34Z"
+},
+"ml:2026-01-10":{
+"s":"submitted",
+"att":1,
+"cov_checked":true,
+"rid":"7bfd5105-ecac-45b9-8fad-b7394b43ad26",
+"sub":"2026-11-18T02:25:49Z"
 }
 }
