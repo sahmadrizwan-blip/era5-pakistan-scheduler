@@ -65,18 +65,16 @@
 "err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "ml:2026-01-06":{
-"s":"failed",
-"att":2,
+"s":"submitted",
+"att":3,
 "cov_checked":true,
-"sub":"2026-11-16T01:36:18Z",
+"sub":"2026-11-19T01:20:30Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-13/6549f2b4667738c032cd17de2b059742.grib",
 "size":338289036,
 "md5":"e0d3cd6c30af04a4ea72abdd3d704dec",
 "fin":"2026-11-16T08:15:16Z",
 "terr":"2026-11-18T02:07:10Z Drive chunk upload failed repeatedly",
-"chk":"2026-11-16T08:15:16Z",
-"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
-"retry_at":"2026-11-18T06:07:10Z"
+"rid":"7105ca61-b361-4e10-8702-2adecd8c7756"
 },
 "ml:2026-01-07":{
 "s":"failed",
@@ -93,7 +91,7 @@
 "retry_at":"2026-11-18T14:29:38Z"
 },
 "ml:2026-01-08":{
-"s":"ready",
+"s":"failed",
 "att":2,
 "cov_checked":true,
 "sub":"2026-11-17T02:37:50Z",
@@ -101,10 +99,10 @@
 "size":328689552,
 "md5":"8fdb5b80296af14611c03dc6013ed508",
 "fin":"2026-11-17T10:56:12Z",
-"terr":"2026-11-18T19:05:38Z Drive chunk upload failed repeatedly",
-"rid":"f52604fa-6172-46e0-a8d8-89572a697888",
+"terr":"2026-11-19T01:07:15Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-17T10:56:12Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-19T05:07:15Z"
 },
 "ml:2026-01-09":{
 "s":"ready",
@@ -117,8 +115,8 @@
 "size":329940075,
 "md5":"51b8e45ddafc8bfcd71c05124c6fa42c",
 "fin":"2026-11-18T02:01:34Z",
-"terr":"2026-11-18T19:20:34Z Drive chunk upload failed repeatedly",
-"tatt":2
+"terr":"2026-11-19T01:14:28Z MD5 mismatch (fcec97fbefe9296e26b4577d8e7cffa3 != 51b8e45ddafc8bfcd71c05124c6fa42c); deleted, will retry",
+"tatt":3
 },
 "ml:2026-01-10":{
 "s":"ready",
@@ -131,7 +129,7 @@
 "size":338746347,
 "md5":"cb0dfc965fc0859053cbd2295db2a7f7",
 "fin":"2026-11-18T10:28:07Z",
-"terr":"2026-11-18T19:27:02Z Drive chunk upload failed repeatedly",
-"tatt":2
+"terr":"2026-11-19T01:14:46Z MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
+"tatt":3
 }
 }

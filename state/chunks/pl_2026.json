@@ -809,14 +809,14 @@
 "size":437002560,
 "md5":"6d30315d015d5ae6e5a589cd9341d37",
 "fin":"2026-11-17T19:38:09Z",
-"terr":"2026-11-18T19:14:45Z MD5 mismatch (7fba40b241adbbaf1496f4791daa7231 != 6d30315d015d5ae6e5a589cd9341d37); deleted, will retry",
+"terr":"2026-11-19T01:13:28Z Drive chunk upload failed repeatedly",
 "rid":"b5eb4831-94f0-4325-bcfd-f0ad8c56e750",
 "chk":"2026-11-17T19:38:05Z",
-"tatt":3
+"tatt":4
 },
 "pl:2026-01:g05":{
-"s":"failed",
-"att":2,
+"s":"submitted",
+"att":3,
 "cov_checked":true,
 "req":{
 "product_type":[
@@ -939,15 +939,13 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-16T19:01:55Z",
+"sub":"2026-11-19T01:20:20Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-14/bbf3b69f27403ef1f1b0dee303619a30.grib",
 "size":355180336,
 "md5":"c93faffa7fdf8c03a3dc700bc009fba7",
 "fin":"2026-11-17T02:15:38Z",
 "terr":"2026-11-18T10:35:21Z Drive chunk upload failed repeatedly",
-"chk":"2026-11-17T02:15:38Z",
-"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
-"retry_at":"2026-11-18T14:35:21Z"
+"rid":"84fe7342-791b-416e-9d2f-5666dc7e1825"
 },
 "pl:2026-01:g06":{
 "s":"failed",
@@ -1085,7 +1083,7 @@
 "retry_at":"2026-11-18T04:07:50Z"
 },
 "pl:2026-01:g07":{
-"s":"ready",
+"s":"failed",
 "att":1,
 "cov_checked":true,
 "req":{
@@ -1209,15 +1207,15 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"rid":"d68c2dfc-4d4e-414f-b9a8-d24425a09c5d",
 "sub":"2026-11-17T02:37:40Z",
 "chk":"2026-11-17T10:56:13Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2026-11-17/43f4c2d8c47a0d93c0e86f44acb990ce.grib",
 "size":437002560,
 "md5":"fabf30fd8cb699d3dce840b6a44eed76",
 "fin":"2026-11-17T10:56:13Z",
-"terr":"2026-11-18T19:11:24Z Drive chunk upload failed repeatedly",
-"tatt":4
+"terr":"2026-11-19T01:07:51Z MD5 mismatch (e9a4137b4202bdf0814eb528e5efc739 != fabf30fd8cb699d3dce840b6a44eed76); deleted, will retry",
+"err":"transfer failed repeatedly: MD5 mismatch (e9a4137b4202bdf0814eb528e5efc739 != fabf30fd8cb699d3dce840b6a44eed76); deleted, will retry",
+"retry_at":"2026-11-19T03:07:51Z"
 },
 "pl:2026-02:g00":{
 "s":"ready",
@@ -1230,7 +1228,7 @@
 "size":407869056,
 "md5":"c919167599d14cbf8bdd20368de82582",
 "fin":"2026-11-18T10:28:08Z",
-"terr":"2026-11-18T10:54:25Z Drive chunk upload failed repeatedly",
-"tatt":1
+"terr":"2026-11-19T01:20:11Z Drive chunk upload failed repeatedly",
+"tatt":2
 }
 }
