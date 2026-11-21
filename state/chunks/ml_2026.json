@@ -92,7 +92,7 @@
 "retry_at":"2026-11-21T05:07:59Z"
 },
 "ml:2026-01-08":{
-"s":"ready",
+"s":"failed",
 "att":3,
 "cov_checked":true,
 "sub":"2026-11-19T18:51:56Z",
@@ -100,10 +100,10 @@
 "size":328689552,
 "md5":"8fdb5b80296af14611c03dc6013ed508",
 "fin":"2026-11-20T00:48:18Z",
-"terr":"2026-11-21T03:54:14Z Drive chunk upload failed repeatedly",
-"rid":"a95ecf3d-8703-4f89-bb1a-9e696557f619",
+"terr":"2026-11-21T12:19:26Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-20T00:48:17Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-21T18:19:26Z"
 },
 "ml:2026-01-09":{
 "s":"ready",
