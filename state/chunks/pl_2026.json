@@ -943,10 +943,10 @@
 "size":355180336,
 "md5":"c93faffa7fdf8c03a3dc700bc009fba7",
 "fin":"2026-11-21T03:44:54Z",
-"terr":"2026-11-22T07:37:17Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-22T15:37:50Z MD5 mismatch (e962c847f2771714f93cb04abc6eb8b7 != c93faffa7fdf8c03a3dc700bc009fba7); deleted, will retry",
 "rid":"6a079db3-1809-40d1-bf19-e36883d1aa74",
 "chk":"2026-11-21T03:44:53Z",
-"tatt":3
+"tatt":4
 },
 "pl:2026-01:g06":{
 "s":"ready",
@@ -1078,14 +1078,14 @@
 "size":365462256,
 "md5":"4f5384b24ae973399ba85a7f3b832995",
 "fin":"2026-11-22T00:02:30Z",
-"terr":"2026-11-22T00:28:04Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-22T15:43:18Z Drive chunk upload failed repeatedly",
 "rid":"7e9865da-d306-45a6-a2c1-f11c95077380",
 "chk":"2026-11-22T00:02:30Z",
-"tatt":1
+"tatt":2
 },
 "pl:2026-01:g07":{
-"s":"failed",
-"att":2,
+"s":"submitted",
+"att":3,
 "cov_checked":true,
 "req":{
 "product_type":[
@@ -1208,18 +1208,16 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-20T08:17:01Z",
+"sub":"2026-11-22T15:44:39Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-20/65054f61d87a19995516efbe49dbf703.grib",
 "size":437002560,
 "md5":"fabf30fd8cb699d3dce840b6a44eed76",
 "fin":"2026-11-20T16:54:31Z",
 "terr":"2026-11-22T07:25:00Z Drive chunk upload failed repeatedly",
-"chk":"2026-11-20T16:54:30Z",
-"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
-"retry_at":"2026-11-22T11:25:00Z"
+"rid":"6a707d8f-b48f-4adc-9fae-151a1e955b87"
 },
 "pl:2026-02:g00":{
-"s":"ready",
+"s":"failed",
 "att":2,
 "cov_checked":true,
 "sub":"2026-11-20T17:18:20Z",
@@ -1227,16 +1225,23 @@
 "size":407869056,
 "md5":"c919167599d14cbf8bdd20368de82582",
 "fin":"2026-11-20T22:56:23Z",
-"terr":"2026-11-22T07:31:10Z Drive chunk upload failed repeatedly",
-"rid":"5b5ab150-b3a9-477c-93d0-1b635aa526de",
+"terr":"2026-11-22T15:33:57Z Drive GET https://www.googleapis.com/drive/v3/files failed after retries",
 "chk":"2026-11-20T22:56:20Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive GET https://www.googleapis.com/drive/v3/files failed after retries",
+"retry_at":"2026-11-22T19:33:57Z"
 },
 "pl:2026-02:g01":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "rid":"89b98642-fc51-4c33-b48e-53ef10c00a1d",
-"sub":"2026-11-22T07:37:26Z"
+"sub":"2026-11-22T07:37:26Z",
+"chk":"2026-11-22T15:30:32Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2026-11-22/c50cc02230385d73b131bf3e1c03e8d6.grib",
+"size":407869056,
+"md5":"286747d1157d55c9fd355455aaeedab",
+"fin":"2026-11-22T15:30:33Z",
+"terr":"2026-11-22T15:44:29Z MD5 mismatch (33dd4b200892fa8256ff6710a7c9fce7 != 286747d1157d55c9fd355455aaeedab); deleted, will retry",
+"tatt":1
 }
 }
