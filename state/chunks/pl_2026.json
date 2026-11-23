@@ -948,8 +948,8 @@
 "err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "pl:2026-01:g06":{
-"s":"failed",
-"att":3,
+"s":"submitted",
+"att":4,
 "cov_checked":true,
 "req":{
 "product_type":[
@@ -1072,15 +1072,13 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-21T20:01:21Z",
+"sub":"2026-11-23T22:31:42Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2026-11-19/f1d63f79776f9d7b84513dad06ec161.grib",
 "size":365462256,
 "md5":"4f5384b24ae973399ba85a7f3b832995",
 "fin":"2026-11-22T00:02:30Z",
 "terr":"2026-11-23T10:18:09Z Drive chunk upload failed repeatedly",
-"chk":"2026-11-22T00:02:30Z",
-"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
-"retry_at":"2026-11-23T16:18:09Z"
+"rid":"777f0ba5-b5f4-435e-aa53-0dcd1f2e13dc"
 },
 "pl:2026-01:g07":{
 "s":"ready",
@@ -1212,10 +1210,10 @@
 "size":437002560,
 "md5":"fabf30fd8cb699d3dce840b6a44eed76",
 "fin":"2026-11-22T21:28:12Z",
-"terr":"2026-11-23T10:30:23Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-23T22:25:03Z MD5 mismatch (e9a4137b4202bdf0814eb528e5efc739 != fabf30fd8cb699d3dce840b6a44eed76); deleted, will retry",
 "rid":"6a707d8f-b48f-4adc-9fae-151a1e955b87",
 "chk":"2026-11-22T21:28:11Z",
-"tatt":3
+"tatt":4
 },
 "pl:2026-02:g00":{
 "s":"ready",
@@ -1226,30 +1224,35 @@
 "size":407869056,
 "md5":"c919167599d14cbf8bdd20368de82582",
 "fin":"2026-11-23T01:54:49Z",
-"terr":"2026-11-23T10:36:12Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-23T22:31:03Z Drive chunk upload failed repeatedly",
 "rid":"5ca758b6-27c1-4373-9594-fde288d94588",
 "chk":"2026-11-23T01:54:48Z",
-"tatt":1
+"tatt":2
 },
 "pl:2026-02:g01":{
-"s":"ready",
+"s":"failed",
 "att":1,
 "cov_checked":true,
-"rid":"89b98642-fc51-4c33-b48e-53ef10c00a1d",
 "sub":"2026-11-22T07:37:26Z",
 "chk":"2026-11-22T15:30:32Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2026-11-22/c50cc02230385d73b131bf3e1c03e8d6.grib",
 "size":407869056,
 "md5":"286747d1157d55c9fd355455aaeedab",
 "fin":"2026-11-22T15:30:33Z",
-"terr":"2026-11-23T10:24:10Z Drive chunk upload failed repeatedly",
-"tatt":4
+"terr":"2026-11-23T22:18:03Z Drive chunk upload failed repeatedly",
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-24T00:18:03Z"
 },
 "pl:2026-02:g02":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "rid":"f0a866cf-42b4-44ee-88ac-91b689c1aa79",
-"sub":"2026-11-23T10:36:22Z"
+"sub":"2026-11-23T10:36:22Z",
+"chk":"2026-11-23T22:08:29Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-23/1acaa5b993a5e89ae99c0840a3640b68.grib",
+"size":407869056,
+"md5":"e480bfba87322563ef6a1923520c36a4",
+"fin":"2026-11-23T22:08:30Z"
 }
 }
