@@ -86,10 +86,10 @@
 "size":337135641,
 "md5":"c3c5531f3c3d98b1a2a5a75c214cb54d",
 "fin":"2026-11-22T15:30:32Z",
-"terr":"2026-11-23T02:03:56Z Drive DELETE https://www.googleapis.com/drive/v3/files/1IeuxIaUe8meYbNoDCIjTY0P06qxKfMqd failed after retries",
+"terr":"2026-11-23T10:18:41Z MD5 mismatch (0474d428eb5902a58f17dd4366f23994 != c3c5531f3c3d98b1a2a5a75c214cb54d); deleted, will retry",
 "rid":"6a4dea5d-9010-40c4-a275-c4496b0509f4",
 "chk":"2026-11-22T15:30:29Z",
-"tatt":3
+"tatt":4
 },
 "ml:2026-01-08":{
 "s":"ready",
@@ -100,10 +100,10 @@
 "size":328689552,
 "md5":"8fdb5b80296af14611c03dc6013ed508",
 "fin":"2026-11-22T21:28:11Z",
-"terr":"2026-11-23T02:16:31Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-23T10:24:45Z MD5 mismatch (bd6614cef49c68bc681fd2fe48f1e72b != 8fdb5b80296af14611c03dc6013ed508); deleted, will retry",
 "rid":"a0bfaa82-6a1f-4a70-a1d5-0945638a43ab",
 "chk":"2026-11-22T21:28:10Z",
-"tatt":2
+"tatt":3
 },
 "ml:2026-01-09":{
 "s":"ready",
@@ -114,22 +114,21 @@
 "size":329940075,
 "md5":"51b8e45ddafc8bfcd71c05124c6fa42c",
 "fin":"2026-11-23T01:54:48Z",
-"terr":"2026-11-22T07:19:04Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-23T10:30:46Z MD5 mismatch (fcec97fbefe9296e26b4577d8e7cffa3 != 51b8e45ddafc8bfcd71c05124c6fa42c); deleted, will retry",
 "rid":"a0f75247-f3ad-4693-bf40-f0d6435b3e4a",
-"chk":"2026-11-23T01:54:47Z"
+"chk":"2026-11-23T01:54:47Z",
+"tatt":1
 },
 "ml:2026-01-10":{
-"s":"failed",
-"att":2,
+"s":"submitted",
+"att":3,
 "cov_checked":true,
-"sub":"2026-11-20T17:18:28Z",
+"sub":"2026-11-23T10:36:31Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-18/689eedcf81af17b796bd73537ebdfc05.grib",
 "size":338746347,
 "md5":"cb0dfc965fc0859053cbd2295db2a7f7",
 "fin":"2026-11-20T22:56:20Z",
 "terr":"2026-11-22T15:30:53Z MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
-"chk":"2026-11-20T22:56:19Z",
-"err":"transfer failed repeatedly: MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
-"retry_at":"2026-11-22T19:30:53Z"
+"rid":"328c756d-5129-406c-89c5-50eaa8f68df8"
 }
 }

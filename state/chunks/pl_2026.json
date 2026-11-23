@@ -948,7 +948,7 @@
 "err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "pl:2026-01:g06":{
-"s":"ready",
+"s":"failed",
 "att":3,
 "cov_checked":true,
 "req":{
@@ -1077,10 +1077,10 @@
 "size":365462256,
 "md5":"4f5384b24ae973399ba85a7f3b832995",
 "fin":"2026-11-22T00:02:30Z",
-"terr":"2026-11-23T02:00:25Z Drive chunk upload failed repeatedly",
-"rid":"7e9865da-d306-45a6-a2c1-f11c95077380",
+"terr":"2026-11-23T10:18:09Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-22T00:02:30Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-23T16:18:09Z"
 },
 "pl:2026-01:g07":{
 "s":"ready",
@@ -1212,10 +1212,10 @@
 "size":437002560,
 "md5":"fabf30fd8cb699d3dce840b6a44eed76",
 "fin":"2026-11-22T21:28:12Z",
-"terr":"2026-11-23T02:22:09Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-23T10:30:23Z Drive chunk upload failed repeatedly",
 "rid":"6a707d8f-b48f-4adc-9fae-151a1e955b87",
 "chk":"2026-11-22T21:28:11Z",
-"tatt":2
+"tatt":3
 },
 "pl:2026-02:g00":{
 "s":"ready",
@@ -1226,9 +1226,10 @@
 "size":407869056,
 "md5":"c919167599d14cbf8bdd20368de82582",
 "fin":"2026-11-23T01:54:49Z",
-"terr":"2026-11-22T15:33:57Z Drive GET https://www.googleapis.com/drive/v3/files failed after retries",
+"terr":"2026-11-23T10:36:12Z Drive chunk upload failed repeatedly",
 "rid":"5ca758b6-27c1-4373-9594-fde288d94588",
-"chk":"2026-11-23T01:54:48Z"
+"chk":"2026-11-23T01:54:48Z",
+"tatt":1
 },
 "pl:2026-02:g01":{
 "s":"ready",
@@ -1241,7 +1242,14 @@
 "size":407869056,
 "md5":"286747d1157d55c9fd355455aaeedab",
 "fin":"2026-11-22T15:30:33Z",
-"terr":"2026-11-23T02:10:00Z Drive chunk upload failed repeatedly",
-"tatt":3
+"terr":"2026-11-23T10:24:10Z Drive chunk upload failed repeatedly",
+"tatt":4
+},
+"pl:2026-02:g02":{
+"s":"submitted",
+"att":1,
+"cov_checked":true,
+"rid":"f0a866cf-42b4-44ee-88ac-91b689c1aa79",
+"sub":"2026-11-23T10:36:22Z"
 }
 }
