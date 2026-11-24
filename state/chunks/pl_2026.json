@@ -1231,16 +1231,17 @@
 "tatt":2
 },
 "pl:2026-02:g01":{
-"s":"submitted",
+"s":"ready",
 "att":2,
 "cov_checked":true,
 "sub":"2026-11-24T06:38:40Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2026-11-22/c50cc02230385d73b131bf3e1c03e8d6.grib",
 "size":407869056,
 "md5":"286747d1157d55c9fd355455aaeedab",
-"fin":"2026-11-22T15:30:33Z",
+"fin":"2026-11-24T18:04:00Z",
 "terr":"2026-11-23T22:18:03Z Drive chunk upload failed repeatedly",
-"rid":"3b44e9f5-7570-4193-a0fb-372ed350acf7"
+"rid":"3b44e9f5-7570-4193-a0fb-372ed350acf7",
+"chk":"2026-11-24T18:03:59Z"
 },
 "pl:2026-02:g02":{
 "s":"ready",
