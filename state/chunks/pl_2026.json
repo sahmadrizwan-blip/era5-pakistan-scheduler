@@ -1077,14 +1077,14 @@
 "size":365462256,
 "md5":"4f5384b24ae973399ba85a7f3b832995",
 "fin":"2026-11-24T06:14:27Z",
-"terr":"2026-11-25T03:03:53Z Drive GET https://www.googleapis.com/drive/v3/files failed after retries",
+"terr":"2026-11-25T22:09:29Z MD5 mismatch (d49ee25c77f2c1e17b9a9fb87dd1456f != 4f5384b24ae973399ba85a7f3b832995); deleted, will retry",
 "rid":"777f0ba5-b5f4-435e-aa53-0dcd1f2e13dc",
 "chk":"2026-11-24T06:14:26Z",
-"tatt":1
+"tatt":2
 },
 "pl:2026-01:g07":{
-"s":"failed",
-"att":3,
+"s":"submitted",
+"att":4,
 "cov_checked":true,
 "req":{
 "product_type":[
@@ -1207,18 +1207,16 @@
 ]
 },
 "note":"days 01 already provided by 29079e6e-8b29-4045-8d86-346a3d8d1623",
-"sub":"2026-11-22T15:44:39Z",
+"sub":"2026-11-25T22:16:45Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2026-11-20/65054f61d87a19995516efbe49dbf703.grib",
 "size":437002560,
 "md5":"fabf30fd8cb699d3dce840b6a44eed76",
 "fin":"2026-11-22T21:28:12Z",
 "terr":"2026-11-24T06:32:34Z MD5 mismatch (e9a4137b4202bdf0814eb528e5efc739 != fabf30fd8cb699d3dce840b6a44eed76); deleted, will retry",
-"chk":"2026-11-22T21:28:11Z",
-"err":"transfer failed repeatedly: MD5 mismatch (e9a4137b4202bdf0814eb528e5efc739 != fabf30fd8cb699d3dce840b6a44eed76); deleted, will retry",
-"retry_at":"2026-11-24T12:32:34Z"
+"rid":"6edd3717-af5e-4e10-8dad-e1517b328042"
 },
 "pl:2026-02:g00":{
-"s":"ready",
+"s":"failed",
 "att":3,
 "cov_checked":true,
 "sub":"2026-11-22T21:45:29Z",
@@ -1226,10 +1224,10 @@
 "size":407869056,
 "md5":"c919167599d14cbf8bdd20368de82582",
 "fin":"2026-11-23T01:54:49Z",
-"terr":"2026-11-25T12:17:37Z MD5 mismatch (f2856fd004d137c787b90a1587144afd != c919167599d14cbf8bdd20368de82582); deleted, will retry",
-"rid":"5ca758b6-27c1-4373-9594-fde288d94588",
+"terr":"2026-11-25T21:59:34Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-23T01:54:48Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-26T03:59:34Z"
 },
 "pl:2026-02:g01":{
 "s":"ready",
@@ -1240,9 +1238,10 @@
 "size":407869056,
 "md5":"286747d1157d55c9fd355455aaeedab",
 "fin":"2026-11-24T18:04:00Z",
-"terr":"2026-11-23T22:18:03Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-25T22:16:36Z MD5 mismatch (33dd4b200892fa8256ff6710a7c9fce7 != 286747d1157d55c9fd355455aaeedab); deleted, will retry",
 "rid":"3b44e9f5-7570-4193-a0fb-372ed350acf7",
-"chk":"2026-11-24T18:03:59Z"
+"chk":"2026-11-24T18:03:59Z",
+"tatt":1
 },
 "pl:2026-02:g02":{
 "s":"ready",
@@ -1255,7 +1254,7 @@
 "size":407869056,
 "md5":"e480bfba87322563ef6a1923520c36a4",
 "fin":"2026-11-23T22:08:30Z",
-"terr":"2026-11-25T12:27:15Z Drive chunk upload failed repeatedly",
-"tatt":2
+"terr":"2026-11-25T22:07:02Z Drive chunk upload failed repeatedly",
+"tatt":3
 }
 }
