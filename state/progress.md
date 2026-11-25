@@ -1,6 +1,6 @@
 # ERA5 Pakistan download progress
 
-_Updated 2026-11-25T03:10:21Z -- storage: **drive**, period 1940-01 .. 2026-10 (newest_year_first)_
+_Updated 2026-11-25T12:27:15Z -- storage: **drive**, period 1940-01 .. 2026-10 (newest_year_first)_
 
 | dataset | planned chunks | done | covered by earlier requests | in flight | ready | failed (retrying) | dead | split | volume done |
 |---|---|---|---|---|---|---|---|---|---|

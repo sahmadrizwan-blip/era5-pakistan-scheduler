@@ -126,10 +126,10 @@
 "size":338746347,
 "md5":"cb0dfc965fc0859053cbd2295db2a7f7",
 "fin":"2026-11-23T22:08:29Z",
-"terr":"2026-11-25T02:59:46Z MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
+"terr":"2026-11-25T12:19:40Z MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
 "rid":"328c756d-5129-406c-89c5-50eaa8f68df8",
 "chk":"2026-11-23T22:08:28Z",
-"tatt":2
+"tatt":3
 },
 "ml:2026-01-11":{
 "s":"ready",

@@ -1226,10 +1226,10 @@
 "size":407869056,
 "md5":"c919167599d14cbf8bdd20368de82582",
 "fin":"2026-11-23T01:54:49Z",
-"terr":"2026-11-25T02:59:13Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-25T12:17:37Z MD5 mismatch (f2856fd004d137c787b90a1587144afd != c919167599d14cbf8bdd20368de82582); deleted, will retry",
 "rid":"5ca758b6-27c1-4373-9594-fde288d94588",
 "chk":"2026-11-23T01:54:48Z",
-"tatt":3
+"tatt":4
 },
 "pl:2026-02:g01":{
 "s":"ready",
@@ -1255,7 +1255,7 @@
 "size":407869056,
 "md5":"e480bfba87322563ef6a1923520c36a4",
 "fin":"2026-11-23T22:08:30Z",
-"terr":"2026-11-25T03:00:31Z MD5 mismatch (5b48e2eae7fb2bb586688e371e655bc7 != e480bfba87322563ef6a1923520c36a4); deleted, will retry",
-"tatt":1
+"terr":"2026-11-25T12:27:15Z Drive chunk upload failed repeatedly",
+"tatt":2
 }
 }
