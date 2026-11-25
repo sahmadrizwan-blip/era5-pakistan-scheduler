@@ -4710,8 +4710,10 @@
    },
    "created": "2026-11-22T15:44:31.761129",
    "ds": "reanalysis-era5-pressure-levels",
+   "fid": "1xn8aXkvmZH-QHFY6uam0sj35x6qbgZiI",
    "fin": null,
    "md5": "fabf30fd8cb699d3dce840b6a44eed76",
+   "pulled": true,
    "req": {
     "area": [
      37.5,
@@ -11449,5 +11451,5 @@
   }
  },
  "jobs_scanned_until": "2026-11-22T15:44:39.673843",
- "licences_checked": "2026-11-23T22:08:27Z"
+ "licences_checked": "2026-11-25T02:41:44Z"
 }

@@ -104,7 +104,7 @@
 "err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "ml:2026-01-09":{
-"s":"ready",
+"s":"failed",
 "att":3,
 "cov_checked":true,
 "sub":"2026-11-22T21:45:38Z",
@@ -112,10 +112,10 @@
 "size":329940075,
 "md5":"51b8e45ddafc8bfcd71c05124c6fa42c",
 "fin":"2026-11-23T01:54:48Z",
-"terr":"2026-11-24T18:33:48Z Drive chunk upload failed repeatedly",
-"rid":"a0f75247-f3ad-4693-bf40-f0d6435b3e4a",
+"terr":"2026-11-25T02:53:49Z MD5 mismatch (fcec97fbefe9296e26b4577d8e7cffa3 != 51b8e45ddafc8bfcd71c05124c6fa42c); deleted, will retry",
 "chk":"2026-11-23T01:54:47Z",
-"tatt":4
+"err":"transfer failed repeatedly: MD5 mismatch (fcec97fbefe9296e26b4577d8e7cffa3 != 51b8e45ddafc8bfcd71c05124c6fa42c); deleted, will retry",
+"retry_at":"2026-11-25T08:53:49Z"
 },
 "ml:2026-01-10":{
 "s":"ready",
@@ -126,10 +126,10 @@
 "size":338746347,
 "md5":"cb0dfc965fc0859053cbd2295db2a7f7",
 "fin":"2026-11-23T22:08:29Z",
-"terr":"2026-11-23T22:31:32Z MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
+"terr":"2026-11-25T02:59:46Z MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
 "rid":"328c756d-5129-406c-89c5-50eaa8f68df8",
 "chk":"2026-11-23T22:08:28Z",
-"tatt":1
+"tatt":2
 },
 "ml:2026-01-11":{
 "s":"ready",
@@ -141,7 +141,9 @@
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-23/bbc61693cb16a58e4868180f693f3304.grib",
 "size":342530292,
 "md5":"5ccec03253b8e52c22a731b275e4fb80",
-"fin":"2026-11-24T06:14:26Z"
+"fin":"2026-11-24T06:14:26Z",
+"terr":"2026-11-25T03:00:50Z MD5 mismatch (84562f7618c832b7e999541ef86f37e4 != 5ccec03253b8e52c22a731b275e4fb80); deleted, will retry",
+"tatt":1
 },
 "ml:2026-01-12":{
 "s":"ready",
@@ -153,6 +155,8 @@
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-24/165cbf1460cee4d20843caa587eeda2f.grib",
 "size":343809144,
 "md5":"4069c8db69c9e4476488636eb2a19e68",
-"fin":"2026-11-24T18:03:59Z"
+"fin":"2026-11-24T18:03:59Z",
+"terr":"2026-11-25T03:10:21Z Drive chunk upload failed repeatedly",
+"tatt":1
 }
 }
