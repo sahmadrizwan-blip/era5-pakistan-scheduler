@@ -104,19 +104,20 @@
 "err":"transfer failed repeatedly: Drive chunk upload failed repeatedly"
 },
 "ml:2026-01-09":{
-"s":"submitted",
+"s":"ready",
 "att":4,
 "cov_checked":true,
 "sub":"2026-11-25T22:16:53Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-17/460e44fc87679b6892059aace748a901.grib",
 "size":329940075,
 "md5":"51b8e45ddafc8bfcd71c05124c6fa42c",
-"fin":"2026-11-23T01:54:48Z",
+"fin":"2026-11-26T03:54:58Z",
 "terr":"2026-11-25T02:53:49Z MD5 mismatch (fcec97fbefe9296e26b4577d8e7cffa3 != 51b8e45ddafc8bfcd71c05124c6fa42c); deleted, will retry",
-"rid":"021c097c-3b97-4759-9af5-785415bb3b22"
+"rid":"021c097c-3b97-4759-9af5-785415bb3b22",
+"chk":"2026-11-26T03:54:58Z"
 },
 "ml:2026-01-10":{
-"s":"ready",
+"s":"failed",
 "att":3,
 "cov_checked":true,
 "sub":"2026-11-23T10:36:31Z",
@@ -124,10 +125,10 @@
 "size":338746347,
 "md5":"cb0dfc965fc0859053cbd2295db2a7f7",
 "fin":"2026-11-23T22:08:29Z",
-"terr":"2026-11-25T22:00:31Z MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
-"rid":"328c756d-5129-406c-89c5-50eaa8f68df8",
+"terr":"2026-11-26T04:01:02Z Drive chunk upload failed repeatedly",
 "chk":"2026-11-23T22:08:28Z",
-"tatt":4
+"err":"transfer failed repeatedly: Drive chunk upload failed repeatedly",
+"retry_at":"2026-11-26T10:01:02Z"
 },
 "ml:2026-01-11":{
 "s":"ready",
@@ -140,8 +141,8 @@
 "size":342530292,
 "md5":"5ccec03253b8e52c22a731b275e4fb80",
 "fin":"2026-11-24T06:14:26Z",
-"terr":"2026-11-25T22:08:36Z MD5 mismatch (84562f7618c832b7e999541ef86f37e4 != 5ccec03253b8e52c22a731b275e4fb80); deleted, will retry",
-"tatt":2
+"terr":"2026-11-26T04:12:58Z Drive chunk upload failed repeatedly",
+"tatt":3
 },
 "ml:2026-01-12":{
 "s":"ready",
@@ -156,5 +157,12 @@
 "fin":"2026-11-24T18:03:59Z",
 "terr":"2026-11-25T22:15:30Z Drive chunk upload failed repeatedly",
 "tatt":2
+},
+"ml:2026-01-13":{
+"s":"submitted",
+"att":1,
+"cov_checked":true,
+"rid":"e33c3c05-a0ad-4469-9618-a14a85af794f",
+"sub":"2026-11-26T04:19:29Z"
 }
 }
