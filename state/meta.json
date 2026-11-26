@@ -3424,8 +3424,10 @@
    },
    "created": "2026-11-23T10:36:23.770838",
    "ds": "reanalysis-era5-complete",
+   "fid": "1_Mm-Uq6gGD8VD4fQ9chEmkZpX16Sxf3_",
    "fin": null,
    "md5": "cb0dfc965fc0859053cbd2295db2a7f7",
+   "pulled": true,
    "req": {
     "area": "37.5/60.5/23.5/78",
     "class": "ea",
