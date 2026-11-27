@@ -112,22 +112,23 @@
 "size":329940075,
 "md5":"51b8e45ddafc8bfcd71c05124c6fa42c",
 "fin":"2026-11-26T03:54:58Z",
-"terr":"2026-11-26T22:55:40Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-27T05:03:26Z MD5 mismatch (fcec97fbefe9296e26b4577d8e7cffa3 != 51b8e45ddafc8bfcd71c05124c6fa42c); deleted, will retry",
 "rid":"021c097c-3b97-4759-9af5-785415bb3b22",
 "chk":"2026-11-26T03:54:58Z",
-"tatt":2
+"tatt":3
 },
 "ml:2026-01-10":{
-"s":"submitted",
+"s":"ready",
 "att":4,
 "cov_checked":true,
 "sub":"2026-11-26T22:55:58Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-18/689eedcf81af17b796bd73537ebdfc05.grib",
 "size":338746347,
 "md5":"cb0dfc965fc0859053cbd2295db2a7f7",
-"fin":"2026-11-23T22:08:29Z",
+"fin":"2026-11-27T04:44:39Z",
 "terr":"2026-11-26T04:01:02Z Drive chunk upload failed repeatedly",
-"rid":"55eda9f3-5ebd-40dc-8628-b1244f41f967"
+"rid":"55eda9f3-5ebd-40dc-8628-b1244f41f967",
+"chk":"2026-11-27T04:44:38Z"
 },
 "ml:2026-01-11":{
 "s":"failed",
@@ -144,18 +145,18 @@
 "retry_at":"2026-11-27T00:34:54Z"
 },
 "ml:2026-01-12":{
-"s":"ready",
+"s":"failed",
 "att":1,
 "cov_checked":true,
-"rid":"71faf433-5db4-47de-b77c-0988ec6f8cf3",
 "sub":"2026-11-24T06:38:49Z",
 "chk":"2026-11-24T18:03:58Z",
 "url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-24/165cbf1460cee4d20843caa587eeda2f.grib",
 "size":343809144,
 "md5":"4069c8db69c9e4476488636eb2a19e68",
 "fin":"2026-11-24T18:03:59Z",
-"terr":"2026-11-26T22:47:24Z Drive chunk upload failed repeatedly",
-"tatt":4
+"terr":"2026-11-27T04:56:52Z MD5 mismatch (ab89f4b92c04204ee4ac58474fa9d2c7 != 4069c8db69c9e4476488636eb2a19e68); deleted, will retry",
+"err":"transfer failed repeatedly: MD5 mismatch (ab89f4b92c04204ee4ac58474fa9d2c7 != 4069c8db69c9e4476488636eb2a19e68); deleted, will retry",
+"retry_at":"2026-11-27T06:56:52Z"
 },
 "ml:2026-01-13":{
 "s":"ready",
