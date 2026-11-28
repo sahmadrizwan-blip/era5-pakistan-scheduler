@@ -125,10 +125,10 @@
 "size":338746347,
 "md5":"cb0dfc965fc0859053cbd2295db2a7f7",
 "fin":"2026-11-27T04:44:39Z",
-"terr":"2026-11-28T05:07:50Z MD5 mismatch (218caac6e86183d1301b1b1d68336278 != cb0dfc965fc0859053cbd2295db2a7f7); deleted, will retry",
+"terr":"2026-11-28T14:02:12Z Drive chunk upload failed repeatedly",
 "rid":"55eda9f3-5ebd-40dc-8628-b1244f41f967",
 "chk":"2026-11-27T04:44:38Z",
-"tatt":3
+"tatt":4
 },
 "ml:2026-01-11":{
 "s":"ready",
@@ -139,10 +139,10 @@
 "size":342530292,
 "md5":"5ccec03253b8e52c22a731b275e4fb80",
 "fin":"2026-11-27T23:10:47Z",
-"terr":"2026-11-28T05:13:51Z MD5 mismatch (84562f7618c832b7e999541ef86f37e4 != 5ccec03253b8e52c22a731b275e4fb80); deleted, will retry",
+"terr":"2026-11-28T14:08:08Z Drive chunk upload failed repeatedly",
 "rid":"57745196-46c9-4cd6-95e2-5180bc674455",
 "chk":"2026-11-27T23:10:46Z",
-"tatt":2
+"tatt":3
 },
 "ml:2026-01-12":{
 "s":"ready",
@@ -168,14 +168,26 @@
 "size":342178203,
 "md5":"8063af7796ce570eb4e1839558451d36",
 "fin":"2026-11-26T22:31:50Z",
-"terr":"2026-11-28T05:06:55Z Drive GET https://www.googleapis.com/drive/v3/files/1HXmMxGMVY-V-rpmYgJnavNyiexrbZw0E failed after retries",
-"tatt":3
+"terr":"2026-11-28T13:56:53Z MD5 mismatch (57d3fde906722069448b4207c804169a != 8063af7796ce570eb4e1839558451d36); deleted, will retry",
+"tatt":4
 },
 "ml:2026-01-14":{
-"s":"submitted",
+"s":"ready",
 "att":1,
 "cov_checked":true,
 "rid":"1ee01fbd-9514-4161-a758-44a198097e28",
-"sub":"2026-11-28T05:14:09Z"
+"sub":"2026-11-28T05:14:09Z",
+"chk":"2026-11-28T13:50:09Z",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-28/1c9bd50578fbce254fbd5bfb8c33506f.grib",
+"size":341174547,
+"md5":"5471e421f841d5ba7a8d8bea42fa2013",
+"fin":"2026-11-28T13:50:11Z"
+},
+"ml:2026-01-15":{
+"s":"submitted",
+"att":1,
+"cov_checked":true,
+"rid":"5b44a376-3115-4e27-ad9d-75903681df0b",
+"sub":"2026-11-28T14:14:23Z"
 }
 }
