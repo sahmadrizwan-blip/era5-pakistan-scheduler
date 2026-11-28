@@ -1211,10 +1211,10 @@
 "size":437002560,
 "md5":"fabf30fd8cb699d3dce840b6a44eed76",
 "fin":"2026-11-26T03:55:00Z",
-"terr":"2026-11-27T23:12:30Z MD5 mismatch (e9a4137b4202bdf0814eb528e5efc739 != fabf30fd8cb699d3dce840b6a44eed76); deleted, will retry",
+"terr":"2026-11-28T05:02:19Z Drive chunk upload failed repeatedly",
 "rid":"6edd3717-af5e-4e10-8dad-e1517b328042",
 "chk":"2026-11-26T03:54:59Z",
-"tatt":3
+"tatt":4
 },
 "pl:2026-02:g00":{
 "s":"ready",
@@ -1225,23 +1225,24 @@
 "size":407869056,
 "md5":"c919167599d14cbf8bdd20368de82582",
 "fin":"2026-11-26T13:29:25Z",
-"terr":"2026-11-27T23:13:28Z MD5 mismatch (f2856fd004d137c787b90a1587144afd != c919167599d14cbf8bdd20368de82582); deleted, will retry",
+"terr":"2026-11-28T05:03:26Z MD5 mismatch (f2856fd004d137c787b90a1587144afd != c919167599d14cbf8bdd20368de82582); deleted, will retry",
 "rid":"fc1146a8-6b31-4108-b688-3b502194a068",
 "chk":"2026-11-26T13:29:25Z",
-"tatt":2
+"tatt":3
 },
 "pl:2026-02:g01":{
-"s":"submitted",
+"s":"ready",
 "att":2,
 "cov_checked":true,
 "sub":"2026-11-27T23:28:47Z",
-"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2026-11-22/c50cc02230385d73b131bf3e1c03e8d6.grib",
+"url":"https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2026-11-27/3577d9acabf54da19bcceaebfc8f7700.grib",
 "size":407869056,
 "md5":"286747d1157d55c9fd355455aaeedab",
-"fin":"2026-11-24T18:04:00Z",
+"fin":"2026-11-28T04:50:34Z",
 "terr":"2026-11-27T05:02:29Z Drive chunk upload failed repeatedly",
 "tatt":4,
-"rid":"5a46bc0c-ee91-4125-8abf-944a00aa40fa"
+"rid":"5a46bc0c-ee91-4125-8abf-944a00aa40fa",
+"chk":"2026-11-28T04:50:34Z"
 },
 "pl:2026-02:g02":{
 "s":"ready",
@@ -1252,10 +1253,10 @@
 "size":407869056,
 "md5":"e480bfba87322563ef6a1923520c36a4",
 "fin":"2026-11-27T04:44:40Z",
-"terr":"2026-11-27T23:20:24Z Drive chunk upload failed repeatedly",
+"terr":"2026-11-28T05:13:28Z Drive chunk upload failed repeatedly",
 "rid":"c3e3f9d8-fd7d-4c66-a97f-059e0ef30064",
 "chk":"2026-11-27T04:44:39Z",
-"tatt":2
+"tatt":3
 },
 "pl:2026-02:g03":{
 "s":"ready",
@@ -1270,5 +1271,12 @@
 "fin":"2026-11-27T23:10:50Z",
 "terr":"2026-11-27T23:28:35Z MD5 mismatch (4c609234846702717cfebe056a6fa2af != 985a53e0492951a56d1f2aff535feea2); deleted, will retry",
 "tatt":1
+},
+"pl:2026-02:g04":{
+"s":"submitted",
+"att":1,
+"cov_checked":true,
+"rid":"9db57cfe-995c-4cc8-9d95-e11f8bd4d112",
+"sub":"2026-11-28T05:14:01Z"
 }
 }
